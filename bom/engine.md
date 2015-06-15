@@ -1,10 +1,4 @@
----
-title: 浏览器的JavaScript引擎
-layout: page
-category: bom
-date: 2013-03-10
-modifiedOn: 2013-12-22
----
+
 
 浏览器通过内置的JavaScript引擎，读取网页中的代码，对其处理后运行。
 
@@ -16,31 +10,31 @@ modifiedOn: 2013-12-22
 
 通过script标签，可以直接将JavaScript代码嵌入网页。
 
-{% highlight html %}
+``` html
 
 <script>
 // some JavaScript code
 </script>
 
-{% endhighlight %}
+```
 
 ### 加载外部脚本
 
 script标签也可以指定加载外部的脚本文件。
 
-{% highlight html %}
+``` html
 
 <script src="example.js"></script>
 
-{% endhighlight %}
+```
 
 如果脚本文件使用了非英语字符，还应该注明编码。
 
-{% highlight html %}
+``` html
 
 <script charset="utf-8" src="example.js"></script>
 
-{% endhighlight %}
+```
 
 加载外部脚本和直接添加代码块，这两种方法不能混用。下面代码的console.log语句直接被忽略。
 
@@ -56,13 +50,13 @@ script标签也可以指定加载外部的脚本文件。
 
 除了上面两种方法，HTML语言允许在某些元素的事件属性和a元素的href属性中，直接写入JavaScript。
 
-{% highlight html %}
+``` html
 
 <div onclick="alert('Hello')"></div>
 
 <a href="javascript:alert('Hello')"></a>
 
-{% endhighlight %}
+```
 
 这种写法将HTML代码与JavaScript代码混写在一起，非常不利于代码管理，不建议使用。
 
@@ -82,7 +76,7 @@ script标签也可以指定加载外部的脚本文件。
 
 将脚本文件都放在网页尾部加载，还有一个好处。在DOM结构生成之前就调用DOM，JavaScript会报错，如果脚本都在网页尾部加载，就不存在这个问题，因为这时DOM肯定已经生成了。
 
-{% highlight html %}
+``` html
 
 <head>
 	<script>
@@ -90,7 +84,7 @@ script标签也可以指定加载外部的脚本文件。
 	</script>
 </head>
 
-{% endhighlight %}
+```
 
 上面代码执行时会报错，因为此时body元素还未生成。
 
@@ -110,12 +104,12 @@ script标签也可以指定加载外部的脚本文件。
 
 另一种解决方法是，使用script标签的onload属性。当script标签指定的外部脚本文件下载和解析完成，会触发一个load事件，可以为这个事件指定回调函数。
 
-{% highlight html %}
+``` html
 
 <script src="jquery.min.js" onload="console.log(document.body.innerHTML)">
 </script>
 
-{% endhighlight %}
+```
 
 但是，如果将脚本放在页面底部，就可以完全按照正常的方式写，上面两种方式都不需要。
 
@@ -134,12 +128,12 @@ script标签也可以指定加载外部的脚本文件。
 
 如果有多个script标签，比如下面这样。
 
-{% highlight html %}
+``` html
 
 <script src="1.js"></script>
 <script src="2.js"></script>
 
-{% endhighlight %}
+```
 
 浏览器会同时平行下载1.js和2.js，但是执行时会保证先执行1.js，然后再执行2.js，即使后者先下载完成，也是如此。也就是说，脚本的执行顺序由它们在页面中的出现顺序决定，这是为了保证脚本之间的依赖关系不受到破坏。
 
@@ -151,12 +145,12 @@ script标签也可以指定加载外部的脚本文件。
 
 为了解决脚本文件下载阻塞网页渲染的问题，一个方法是加入defer属性。
 
-{% highlight html %}
+``` html
 
 <script src="1.js" defer></script>
 <script src="2.js" defer></script>
 
-{% endhighlight %}
+```
 
 defer属性的运行过程是这样的。
 
@@ -173,12 +167,12 @@ defer属性的运行过程是这样的。
 
 解决“阻塞效应”的另一个方法是加入async属性。
 
-{% highlight html %}
+``` html
 
 <script src="1.js" async></script>
 <script src="2.js" async></script>
 
-{% endhighlight %}
+```
 
 async属性的运行过程是这样的。
 
@@ -196,7 +190,7 @@ defer属性和async属性到底应该使用哪一个？一般来说，如果脚�
 
 除了用静态的script标签，还可以动态嵌入script标签。
 
-{% highlight javascript %}
+``` javascript
 
 ['1.js', '2.js'].forEach(function(src) {
   var script = document.createElement('script');
@@ -204,13 +198,13 @@ defer属性和async属性到底应该使用哪一个？一般来说，如果脚�
   document.head.appendChild(script);
 });
 
-{% endhighlight %}
+```
 
 这种方法的好处是，动态生成的script标签不会阻塞页面渲染，也就不会造成浏览器假死。但是问题在于，这种方法无法保证脚本的执行顺序，哪个脚本文件先下载完成，就先执行哪个。
 
 如果想避免这个问题，可以设置async属性为false。
 
-{% highlight javascript %}
+``` javascript
 
 ['1.js', '2.js'].forEach(function(src) {
   var script = document.createElement('script');
@@ -219,7 +213,7 @@ defer属性和async属性到底应该使用哪一个？一般来说，如果脚�
   document.head.appendChild(script);
 });
 
-{% endhighlight %}
+```
 
 上面的代码依然不会阻塞页面渲染，而且可以保证2.js在1.js后面执行。不过需要注意的是，在这段代码后面加载的脚本文件，会因此都等待2.js执行完成后再执行。
 
@@ -249,27 +243,27 @@ defer属性和async属性到底应该使用哪一个？一般来说，如果脚�
 
 如果不指定协议，浏览器默认采用HTTP协议下载。
 
-{% highlight html %}
+``` html
 
 <script src="example.js"></script>
 
-{% endhighlight %}
+```
 
 上面的example.js默认就是采用http协议下载，如果要采用HTTPs协议下载，必需写明（假定服务器支持）。
 
-{% highlight html %}
+``` html
 
 <script src="https://example.js"></script>
 
-{% endhighlight %}
+```
 
 但是有时我们会希望，根据页面本身的协议来决定加载协议，这时可以采用下面的写法。
 
-{% highlight html %}
+``` html
 
 <script src="//example.js"></script>
 
-{% endhighlight %}
+```
 
 ## JavaScript虚拟机
 

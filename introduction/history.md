@@ -1,10 +1,4 @@
----
-title: JavaScript的历史
-layout: page
-category: introduction
-date: 2013-01-10
-modifiedOn: 2013-12-05
----
+
 
 理解现在的最好方法之一，就是了解历史，本节将全面介绍JavaScript的历史。了解这些内容，还有助于把握JavaScript在整个计算机编程体系和计算机工业中所处的位置，以及涉及的全部范围。
 

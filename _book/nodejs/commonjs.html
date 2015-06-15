@@ -1,0 +1,2184 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>CommonJS规范 | 说明</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../nodejs/packagejson.html" />
+    
+    
+    <link rel="prev" href="../nodejs/basic.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="13.15" data-basepath=".." data-revision="Mon Jun 15 2015 13:31:01 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 导论</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2" data-path="introduction/preface.html">
+            
+                
+                    <a href="../introduction/preface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="introduction/why.html">
+            
+                
+                    <a href="../introduction/why.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        为什么学习JavaScript？
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introduction/history.html">
+            
+                
+                    <a href="../introduction/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        JavaScript的历史
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 基本语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3" data-path="grammar/basic.html">
+            
+                
+                    <a href="../grammar/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="grammar/number.html">
+            
+                
+                    <a href="../grammar/number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        数值
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="grammar/string.html">
+            
+                
+                    <a href="../grammar/string.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="grammar/object.html">
+            
+                
+                    <a href="../grammar/object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="grammar/array.html">
+            
+                
+                    <a href="../grammar/array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        数组
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="grammar/function.html">
+            
+                
+                    <a href="../grammar/function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="grammar/operator.html">
+            
+                
+                    <a href="../grammar/operator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="grammar/conversion.html">
+            
+                
+                    <a href="../grammar/conversion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        数据类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="grammar/error.html">
+            
+                
+                    <a href="../grammar/error.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        错误处理机制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="grammar/style.html">
+            
+                
+                    <a href="../grammar/style.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        编程风格
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 标准库</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4" data-path="stdlib/object.html">
+            
+                
+                    <a href="../stdlib/object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Object对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="stdlib/array.html">
+            
+                
+                    <a href="../stdlib/array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Array 对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="stdlib/wrapper.html">
+            
+                
+                    <a href="../stdlib/wrapper.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        包装对象和Boolean对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="stdlib/number.html">
+            
+                
+                    <a href="../stdlib/number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Number对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="stdlib/string.html">
+            
+                
+                    <a href="../stdlib/string.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        String对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="stdlib/math.html">
+            
+                
+                    <a href="../stdlib/math.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Math对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="stdlib/date.html">
+            
+                
+                    <a href="../stdlib/date.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        Date对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="stdlib/regexp.html">
+            
+                
+                    <a href="../stdlib/regexp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        RegExp对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="stdlib/json.html">
+            
+                
+                    <a href="../stdlib/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        JSON对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="stdlib/arraybuffer.html">
+            
+                
+                    <a href="../stdlib/arraybuffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        ArrayBuffer：类型化数组
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 面向对象编程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5" data-path="oop/basic.html">
+            
+                
+                    <a href="../oop/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="oop/encapsulation.html">
+            
+                
+                    <a href="../oop/encapsulation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        封装
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="oop/inheritance.html">
+            
+                
+                    <a href="../oop/inheritance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="oop/module.html">
+            
+                
+                    <a href="../oop/module.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        模块化编程
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> DOM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6" data-path="dom/node.html">
+            
+                
+                    <a href="../dom/node.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Node节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="dom/document.html">
+            
+                
+                    <a href="../dom/document.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Document节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="dom/element.html">
+            
+                
+                    <a href="../dom/element.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Element节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="dom/text.html">
+            
+                
+                    <a href="../dom/text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Text节点和DocumentFragment节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="dom/event.html">
+            
+                
+                    <a href="../dom/event.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Event对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="dom/css.html">
+            
+                
+                    <a href="../dom/css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        CSS操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="dom/mutationobserver.html">
+            
+                
+                    <a href="../dom/mutationobserver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Mutation Observer
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 浏览器对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7" data-path="bom/engine.html">
+            
+                
+                    <a href="../bom/engine.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        浏览器的JavaScript引擎
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="bom/timer.html">
+            
+                
+                    <a href="../bom/timer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        定时器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="bom/window.html">
+            
+                
+                    <a href="../bom/window.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        window对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="bom/history.html">
+            
+                
+                    <a href="../bom/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        History对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="bom/ajax.html">
+            
+                
+                    <a href="../bom/ajax.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        Ajax
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="bom/windowpostmessage.html">
+            
+                
+                    <a href="../bom/windowpostmessage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        window.postMessage方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="bom/webstorage.html">
+            
+                
+                    <a href="../bom/webstorage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                        Web Storage：浏览器端数据储存机制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="bom/indexeddb.html">
+            
+                
+                    <a href="../bom/indexeddb.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                        IndexedDB：浏览器端数据库
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="bom/notification.html">
+            
+                
+                    <a href="../bom/notification.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.15.</b>
+                        
+                        Web Notification API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="bom/performance.html">
+            
+                
+                    <a href="../bom/performance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.16.</b>
+                        
+                        Performance API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="bom/mobile.html">
+            
+                
+                    <a href="../bom/mobile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.17.</b>
+                        
+                        移动设备API
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> HTML网页的API</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.8" data-path="htmlapi/elements.html">
+            
+                
+                    <a href="../htmlapi/elements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        HTML网页元素
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="htmlapi/canvas.html">
+            
+                
+                    <a href="../htmlapi/canvas.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        Canvas
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="htmlapi/svg.html">
+            
+                
+                    <a href="../htmlapi/svg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        SVG图像
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="htmlapi/form.html">
+            
+                
+                    <a href="../htmlapi/form.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        表单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="htmlapi/file.html">
+            
+                
+                    <a href="../htmlapi/file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        文件与二进制数据的操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="htmlapi/webworker.html">
+            
+                
+                    <a href="../htmlapi/webworker.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        Web Worker
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="htmlapi/eventsource.html">
+            
+                
+                    <a href="../htmlapi/eventsource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                        SSE：服务器发送事件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="htmlapi/pagevisibility.html">
+            
+                
+                    <a href="../htmlapi/pagevisibility.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.15.</b>
+                        
+                        Page Visiblity
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="htmlapi/fullscreen.html">
+            
+                
+                    <a href="../htmlapi/fullscreen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.16.</b>
+                        
+                        FullScreen API：全屏操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="htmlapi/webspeech.html">
+            
+                
+                    <a href="../htmlapi/webspeech.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.17.</b>
+                        
+                        Web Speech
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="htmlapi/requestanimationframe.html">
+            
+                
+                    <a href="../htmlapi/requestanimationframe.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.18.</b>
+                        
+                        requestAnimationFrame
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="htmlapi/websocket.html">
+            
+                
+                    <a href="../htmlapi/websocket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.19.</b>
+                        
+                        WebSocket
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="htmlapi/webrtc.html">
+            
+                
+                    <a href="../htmlapi/webrtc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.20.</b>
+                        
+                        WebRTC
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="htmlapi/webcomponents.html">
+            
+                
+                    <a href="../htmlapi/webcomponents.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.21.</b>
+                        
+                        Web Components
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> jQuery</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.9" data-path="jquery/basic.html">
+            
+                
+                    <a href="../jquery/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.9.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="jquery/utility.html">
+            
+                
+                    <a href="../jquery/utility.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.10.</b>
+                        
+                        工具方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="jquery/plugin.html">
+            
+                
+                    <a href="../jquery/plugin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.11.</b>
+                        
+                        插件开发
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="jquery/deferred.html">
+            
+                
+                    <a href="../jquery/deferred.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.12.</b>
+                        
+                        deferred对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="jquery/jquery-free.html">
+            
+                
+                    <a href="../jquery/jquery-free.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.13.</b>
+                        
+                        如何做到jQuery-free？
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> 开发工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.10" data-path="tool/console.html">
+            
+                
+                    <a href="../tool/console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        console对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.11" data-path="tool/phantomjs.html">
+            
+                
+                    <a href="../tool/phantomjs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                        PhantomJS
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.12" data-path="tool/bower.html">
+            
+                
+                    <a href="../tool/bower.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.12.</b>
+                        
+                        Bower：客户端库管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.13" data-path="tool/grunt.html">
+            
+                
+                    <a href="../tool/grunt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.13.</b>
+                        
+                        Grunt：任务自动管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.14" data-path="tool/gulp.html">
+            
+                
+                    <a href="../tool/gulp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.14.</b>
+                        
+                        Gulp：任务自动管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.15" data-path="tool/browserify.html">
+            
+                
+                    <a href="../tool/browserify.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.15.</b>
+                        
+                        Browserify：浏览器加载Node.js模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.16" data-path="tool/requirejs.html">
+            
+                
+                    <a href="../tool/requirejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.16.</b>
+                        
+                        RequireJS和AMD规范
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.17" data-path="tool/sourcemap.html">
+            
+                
+                    <a href="../tool/sourcemap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.17.</b>
+                        
+                        Source map
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.18" data-path="tool/testing.html">
+            
+                
+                    <a href="../tool/testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.18.</b>
+                        
+                        JavaScript 测试
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+            <span><b>10.</b> JavaScript高级语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.11" data-path="advanced/asynchronous.html">
+            
+                
+                    <a href="../advanced/asynchronous.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.11.</b>
+                        
+                        异步编程的模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.12" data-path="advanced/fsm.html">
+            
+                
+                    <a href="../advanced/fsm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.12.</b>
+                        
+                        有限状态机
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.13" data-path="advanced/backbonejs.html">
+            
+                
+                    <a href="../advanced/backbonejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.13.</b>
+                        
+                        MVC模式和Backbone.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.14" data-path="advanced/strict.html">
+            
+                
+                    <a href="../advanced/strict.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.14.</b>
+                        
+                        严格模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.15" data-path="advanced/ecmascript6.html">
+            
+                
+                    <a href="../advanced/ecmascript6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.15.</b>
+                        
+                        ECMAScript 6 介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 附录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.12" data-path="appendix/api.html">
+            
+                
+                    <a href="../appendix/api.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.12.</b>
+                        
+                        JavaScript API列表
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+            <span><b>12.</b> 草稿一：函数库</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.13" data-path="library/underscore.html">
+            
+                
+                    <a href="../library/underscore.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.13.</b>
+                        
+                        Underscore.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="library/modernizr.html">
+            
+                
+                    <a href="../library/modernizr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.14.</b>
+                        
+                        Modernizr
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.15" data-path="library/datejs.html">
+            
+                
+                    <a href="../library/datejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.15.</b>
+                        
+                        Datejs
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.16" data-path="library/d3.html">
+            
+                
+                    <a href="../library/d3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.16.</b>
+                        
+                        D3.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.17" data-path="library/designpattern.html">
+            
+                
+                    <a href="../library/designpattern.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.17.</b>
+                        
+                        设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.18" data-path="library/sorting.html">
+            
+                
+                    <a href="../library/sorting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.18.</b>
+                        
+                        排序算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" >
+            
+            <span><b>13.</b> 草稿二：Node.js</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.14" data-path="nodejs/basic.html">
+            
+                
+                    <a href="../nodejs/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.14.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="13.15" data-path="nodejs/commonjs.html">
+            
+                
+                    <a href="../nodejs/commonjs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.15.</b>
+                        
+                        CommonJS规范
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.16" data-path="nodejs/packagejson.html">
+            
+                
+                    <a href="../nodejs/packagejson.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.16.</b>
+                        
+                        package.json文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.17" data-path="nodejs/npm.html">
+            
+                
+                    <a href="../nodejs/npm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.17.</b>
+                        
+                        npm模块管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.18" data-path="nodejs/fs.html">
+            
+                
+                    <a href="../nodejs/fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.18.</b>
+                        
+                        fs模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.19" data-path="nodejs/path.html">
+            
+                
+                    <a href="../nodejs/path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.19.</b>
+                        
+                        path模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.20" data-path="nodejs/process.html">
+            
+                
+                    <a href="../nodejs/process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.20.</b>
+                        
+                        process对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.21" data-path="nodejs/buffer.html">
+            
+                
+                    <a href="../nodejs/buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.21.</b>
+                        
+                        Buffer对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.22" data-path="nodejs/events.html">
+            
+                
+                    <a href="../nodejs/events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.22.</b>
+                        
+                        Events模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.23" data-path="nodejs/stream.html">
+            
+                
+                    <a href="../nodejs/stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.23.</b>
+                        
+                        Stream接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.24" data-path="nodejs/child-process.html">
+            
+                
+                    <a href="../nodejs/child-process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.24.</b>
+                        
+                        Child Process模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.25" data-path="nodejs/http.html">
+            
+                
+                    <a href="../nodejs/http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.25.</b>
+                        
+                        Http模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.26" data-path="nodejs/assert.html">
+            
+                
+                    <a href="../nodejs/assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.26.</b>
+                        
+                        assert模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.27" data-path="nodejs/cluster.html">
+            
+                
+                    <a href="../nodejs/cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.27.</b>
+                        
+                        Cluster模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.28" data-path="nodejs/os.html">
+            
+                
+                    <a href="../nodejs/os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.28.</b>
+                        
+                        OS模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.29" data-path="nodejs/net.html">
+            
+                
+                    <a href="../nodejs/net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.29.</b>
+                        
+                        Net模块和DNS模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.30" data-path="nodejs/express.html">
+            
+                
+                    <a href="../nodejs/express.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.30.</b>
+                        
+                        Express框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.31" data-path="nodejs/koa.html">
+            
+                
+                    <a href="../nodejs/koa.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.31.</b>
+                        
+                        Koa框架
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >说明</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="%E6%A6%82%E8%BF%B0">&#x6982;&#x8FF0;</h2>
+<p>CommonJS&#x662F;&#x670D;&#x52A1;&#x5668;&#x6A21;&#x5757;&#x7684;&#x89C4;&#x8303;&#xFF0C;Node.js&#x91C7;&#x7528;&#x4E86;&#x8FD9;&#x4E2A;&#x89C4;&#x8303;&#x3002;</p>
+<p>&#x6839;&#x636E;CommonJS&#x89C4;&#x8303;&#xFF0C;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF08;&#x8FD8;&#x5305;&#x62EC;&#x51FD;&#x6570;&#x548C;&#x7C7B;&#xFF09;&#xFF0C;&#x90FD;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x5BF9;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x662F;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> addX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(value)</span> </span>{
+  <span class="hljs-keyword">return</span> value + x;
+};
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;x&#x548C;&#x51FD;&#x6570;addX&#xFF0C;&#x662F;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x4E0D;&#x53EF;&#x89C1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x5728;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x5206;&#x4EAB;&#x53D8;&#x91CF;&#xFF0C;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x4E3A;global&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript">global.warning = <span class="hljs-literal">true</span>;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684;waining&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x6837;&#x5199;&#x6CD5;&#x662F;&#x4E0D;&#x63A8;&#x8350;&#x7684;&#x3002;</p>
+<p>CommonJS&#x89C4;&#x5B9A;&#xFF0C;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5BF9;&#x5916;&#x63A5;&#x53E3;&#x662F;module.exports&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> addX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(value)</span> </span>{
+  <span class="hljs-keyword">return</span> value + x;
+};
+<span class="hljs-built_in">module</span>.exports.x = x;
+<span class="hljs-built_in">module</span>.exports.addX = addX;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x901A;&#x8FC7;module.exports&#x5BF9;&#x8C61;&#xFF0C;&#x5B9A;&#x4E49;&#x5BF9;&#x5916;&#x63A5;&#x53E3;&#xFF0C;&#x8F93;&#x51FA;&#x53D8;&#x91CF;x&#x548C;&#x51FD;&#x6570;addX&#x3002;module.exports&#x5BF9;&#x8C61;&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x7684;&#xFF0C;&#x5B83;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6587;&#x4EF6;&#x5185;&#x90E8;&#x4E0E;&#x5916;&#x90E8;&#x901A;&#x4FE1;&#x7684;&#x6865;&#x6881;&#x3002;</p>
+<p>require&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5728;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x52A0;&#x8F7D;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x5177;&#x4F53;&#x7528;&#x6CD5;&#x53C2;&#x89C1;&#x300A;Require&#x547D;&#x4EE4;&#x300B;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> example = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./example.js&apos;</span>);
+
+<span class="hljs-built_in">console</span>.log(example.x); <span class="hljs-comment">// 5</span>
+<span class="hljs-built_in">console</span>.log(addX(<span class="hljs-number">1</span>)); <span class="hljs-comment">// 6</span>
+</code></pre>
+<h2 id="module%E5%AF%B9%E8%B1%A1">module&#x5BF9;&#x8C61;</h2>
+<p>&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x90FD;&#x6709;&#x4E00;&#x4E2A;module&#x53D8;&#x91CF;&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x3002;module&#x4E0D;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x800C;&#x662F;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x90FD;&#x6709;&#x7684;&#x672C;&#x5730;&#x53D8;&#x91CF;&#x3002;</p>
+<ul>
+<li>module.id &#x6A21;&#x5757;&#x7684;&#x8BC6;&#x522B;&#x7B26;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x5E26;&#x6709;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x7684;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#x540D;&#x3002;</li>
+<li>module.filename &#x6A21;&#x5757;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;</li>
+<li>module.loaded &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8868;&#x793A;&#x6A21;&#x5757;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x52A0;&#x8F7D;&#x3002;</li>
+<li>module.parent &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8868;&#x793A;&#x8C03;&#x7528;&#x8BE5;&#x6A21;&#x5757;&#x7684;&#x6A21;&#x5757;&#x3002;</li>
+<li>module.children &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;&#x8BE5;&#x6A21;&#x5757;&#x8981;&#x7528;&#x5230;&#x7684;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x3002;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x6587;&#x4EF6;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x884C;&#x8F93;&#x51FA;module&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// example.js</span>
+<span class="hljs-keyword">var</span> jquery = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;jquery&apos;</span>);
+exports.$ = jquery;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">module</span>);
+</code></pre>
+<p>&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#x4F1A;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-javascript">{ id: <span class="hljs-string">&apos;.&apos;</span>,
+  exports: { <span class="hljs-string">&apos;$&apos;</span>: [<span class="hljs-built_in">Function</span>] },
+  parent: <span class="hljs-literal">null</span>,
+  filename: <span class="hljs-string">&apos;/path/to/example.js&apos;</span>,
+  loaded: <span class="hljs-literal">false</span>,
+  children:
+   [ { id: <span class="hljs-string">&apos;/path/to/node_modules/jquery/dist/jquery.js&apos;</span>,
+       exports: [<span class="hljs-built_in">Function</span>],
+       parent: [Circular],
+       filename: <span class="hljs-string">&apos;/path/to/node_modules/jquery/dist/jquery.js&apos;</span>,
+       loaded: <span class="hljs-literal">true</span>,
+       children: [],
+       paths: [<span class="hljs-built_in">Object</span>] } ],
+  paths:
+   [ <span class="hljs-string">&apos;/home/user/deleted/node_modules&apos;</span>,
+     <span class="hljs-string">&apos;/home/user/node_modules&apos;</span>,
+     <span class="hljs-string">&apos;/home/node_modules&apos;</span>,
+     <span class="hljs-string">&apos;/node_modules&apos;</span> ]
+}
+</code></pre>
+<h3 id="module-exports%E5%B1%9E%E6%80%A7">module.exports&#x5C5E;&#x6027;</h3>
+<p>module.exports&#x5C5E;&#x6027;&#x8868;&#x793A;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x5BF9;&#x5916;&#x8F93;&#x51FA;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x52A0;&#x8F7D;&#x8BE5;&#x6A21;&#x5757;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x8BFB;&#x53D6;module.exports&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> EventEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;events&apos;</span>).EventEmitter;
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">new</span> EventEmitter();
+
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">module</span>.exports.emit(<span class="hljs-string">&apos;ready&apos;</span>);
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x6A21;&#x5757;&#x4F1A;&#x5728;&#x52A0;&#x8F7D;&#x540E;1&#x79D2;&#x540E;&#xFF0C;&#x53D1;&#x51FA;ready&#x4E8B;&#x4EF6;&#x3002;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x76D1;&#x542C;&#x8BE5;&#x4E8B;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;&#x6210;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./a&apos;</span>);
+a.on(<span class="hljs-string">&apos;ready&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;module a is ready&apos;</span>);
+});
+</code></pre>
+<h3 id="exports%E5%8F%98%E9%87%8F">exports&#x53D8;&#x91CF;</h3>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF0C;Node&#x4E3A;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;exports&#x53D8;&#x91CF;&#xFF0C;&#x6307;&#x5411;module.exports&#x3002;&#x8FD9;&#x7B49;&#x540C;&#x5728;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x5934;&#x90E8;&#xFF0C;&#x6709;&#x4E00;&#x884C;&#x8FD9;&#x6837;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> exports = <span class="hljs-built_in">module</span>.exports;
+</code></pre>
+<p>&#x9020;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF0C;&#x5728;&#x5BF9;&#x5916;&#x8F93;&#x51FA;&#x6A21;&#x5757;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5411;exports&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript">
+exports.area = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(r)</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.PI * r * r;
+};
+
+exports.circumference = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(r)</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * <span class="hljs-built_in">Math</span>.PI * r;
+};
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5C06;exports&#x53D8;&#x91CF;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x7B49;&#x4E8E;&#x5207;&#x65AD;&#x4E86;exports&#x4E0E;module.exports&#x7684;&#x8054;&#x7CFB;&#x3002;</p>
+<pre><code class="lang-javascript">
+exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(x)</span></span>{ <span class="hljs-built_in">console</span>.log(x);};
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x6837;&#x7684;&#x5199;&#x6CD5;&#x662F;&#x65E0;&#x6548;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5207;&#x65AD;&#x4E86;exports&#x4E0E;module.exports&#x4E4B;&#x95F4;&#x7684;&#x94FE;&#x63A5;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x5199;&#x6CD5;&#x4E5F;&#x662F;&#x65E0;&#x6548;&#x7684;&#x3002;</p>
+<pre><code class="lang-javascript">exports.hello = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;hello&apos;</span>;
+};
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&apos;Hello world&apos;</span>;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;hello&#x51FD;&#x6570;&#x662F;&#x65E0;&#x6CD5;&#x5BF9;&#x5916;&#x8F93;&#x51FA;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;<code>module.exports</code>&#x88AB;&#x91CD;&#x65B0;&#x8D4B;&#x503C;&#x4E86;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5BF9;&#x5916;&#x63A5;&#x53E3;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6216;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;exports&#x8F93;&#x51FA;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;module.exports&#x8F93;&#x51FA;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(x)</span></span>{ <span class="hljs-built_in">console</span>.log(x);};
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F60;&#x89C9;&#x5F97;&#xFF0C;exports&#x4E0E;module.exports&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;&#x5F88;&#x96BE;&#x5206;&#x6E05;&#xFF0C;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x662F;&#x653E;&#x5F03;&#x4F7F;&#x7528;exports&#xFF0C;&#x53EA;&#x4F7F;&#x7528;module.exports&#x3002;</p>
+<h2 id="amd%E8%A7%84%E8%8C%83%E4%B8%8Ecommonjs%E8%A7%84%E8%8C%83%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7">AMD&#x89C4;&#x8303;&#x4E0E;CommonJS&#x89C4;&#x8303;&#x7684;&#x517C;&#x5BB9;&#x6027;</h2>
+<p>CommonJS&#x89C4;&#x8303;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x6709;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x624D;&#x80FD;&#x6267;&#x884C;&#x540E;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x3002;AMD&#x89C4;&#x8303;&#x5219;&#x662F;&#x975E;&#x540C;&#x6B65;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#xFF0C;&#x5141;&#x8BB8;&#x6307;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x7531;&#x4E8E;Node.js&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x7F16;&#x7A0B;&#xFF0C;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#x4E00;&#x822C;&#x90FD;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E8E;&#x672C;&#x5730;&#x786C;&#x76D8;&#xFF0C;&#x6240;&#x4EE5;&#x52A0;&#x8F7D;&#x8D77;&#x6765;&#x6BD4;&#x8F83;&#x5FEB;&#xFF0C;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x975E;&#x540C;&#x6B65;&#x52A0;&#x8F7D;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;CommonJS&#x89C4;&#x8303;&#x6BD4;&#x8F83;&#x9002;&#x7528;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;&#xFF0C;&#x8981;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#xFF0C;&#x8FD9;&#x65F6;&#x5C31;&#x5FC5;&#x987B;&#x91C7;&#x7528;&#x975E;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#xFF0C;&#x56E0;&#x6B64;&#x6D4F;&#x89C8;&#x5668;&#x7AEF;&#x4E00;&#x822C;&#x91C7;&#x7528;AMD&#x89C4;&#x8303;&#x3002;</p>
+<p>AMD&#x89C4;&#x8303;&#x4F7F;&#x7528;define&#x65B9;&#x6CD5;&#x5B9A;&#x4E49;&#x6A21;&#x5757;&#xFF0C;&#x4E0B;&#x9762;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-javascript">
+define([<span class="hljs-string">&apos;package/lib&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(lib)</span></span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span></span>{
+    lib.log(<span class="hljs-string">&apos;hello world!&apos;</span>);
+  }
+
+  <span class="hljs-keyword">return</span> {
+    foo: foo
+  };
+});
+</code></pre>
+<p>AMD&#x89C4;&#x8303;&#x5141;&#x8BB8;&#x8F93;&#x51FA;&#x7684;&#x6A21;&#x5757;&#x517C;&#x5BB9;CommonJS&#x89C4;&#x8303;&#xFF0C;&#x8FD9;&#x65F6;define&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x5199;&#x6210;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code class="lang-javascript">
+define(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(require, exports, module)</span></span>{
+  <span class="hljs-keyword">var</span> someModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;someModule&quot;</span>);
+  <span class="hljs-keyword">var</span> anotherModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;anotherModule&quot;</span>);
+
+  someModule.doTehAwesome();
+  anotherModule.doMoarAwesome();
+
+  exports.asplode = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span></span>{
+    someModule.doTehAwesome();
+    anotherModule.doMoarAwesome();
+  };
+});
+</code></pre>
+<h2 id="require%E5%91%BD%E4%BB%A4">require&#x547D;&#x4EE4;</h2>
+<h3 id="%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95">&#x57FA;&#x672C;&#x7528;&#x6CD5;</h3>
+<p>Node.js&#x4F7F;&#x7528;CommonJS&#x6A21;&#x5757;&#x89C4;&#x8303;&#xFF0C;&#x5185;&#x7F6E;&#x7684;require&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#x3002;</p>
+<p>require&#x547D;&#x4EE4;&#x7684;&#x57FA;&#x672C;&#x529F;&#x80FD;&#x662F;&#xFF0C;&#x8BFB;&#x5165;&#x5E76;&#x6267;&#x884C;&#x4E00;&#x4E2A;JavaScript&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x8BE5;&#x6A21;&#x5757;&#x7684;exports&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x53D1;&#x73B0;&#x6307;&#x5B9A;&#x6A21;&#x5757;&#xFF0C;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// example.js</span>
+<span class="hljs-keyword">var</span> invisible = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;invisible&quot;</span>);
+}
+
+exports.message = <span class="hljs-string">&quot;hi&quot;</span>;
+
+exports.say = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(message);
+}
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x8F93;&#x51FA;exports&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> example = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./example.js&apos;</span>);
+example
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//   message: &quot;hi&quot;,</span>
+<span class="hljs-comment">//   say: [Function]</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6A21;&#x5757;&#x8F93;&#x51FA;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x5C31;&#x4E0D;&#x80FD;&#x5B9A;&#x4E49;&#x5728;exports&#x5BF9;&#x8C61;&#x4E0A;&#x9762;&#xFF0C;&#x800C;&#x8981;&#x5B9A;&#x4E49;&#x5728;<code>module.exports</code>&#x53D8;&#x91CF;&#x4E0A;&#x9762;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;hello world&quot;</span>)
+}
+
+<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./example2.js&apos;</span>)()
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;require&#x547D;&#x4EE4;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#xFF0C;&#x7B49;&#x4E8E;&#x662F;&#x6267;&#x884C;<code>module.exports</code>&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x8F93;&#x51FA; hello world&#x3002;</p>
+<h3 id="%E5%8A%A0%E8%BD%BD%E8%A7%84%E5%88%99">&#x52A0;&#x8F7D;&#x89C4;&#x5219;</h3>
+<p>require&#x547D;&#x4EE4;&#x63A5;&#x53D7;&#x6A21;&#x5757;&#x540D;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x5982;&#x679C;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x201C;/&#x201D;&#x5F00;&#x5934;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x52A0;&#x8F7D;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x4F4D;&#x4E8E;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x7684;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#x3002;&#x6BD4;&#x5982;&#xFF0C;<code>require(&apos;/home/marco/foo.js&apos;)</code>&#x5C06;&#x52A0;&#x8F7D;/home/marco/foo.js&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x5982;&#x679C;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x201C;./&#x201D;&#x5F00;&#x5934;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x52A0;&#x8F7D;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x4F4D;&#x4E8E;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF08;&#x8DDF;&#x5F53;&#x524D;&#x6267;&#x884C;&#x811A;&#x672C;&#x7684;&#x4F4D;&#x7F6E;&#x76F8;&#x6BD4;&#xFF09;&#x7684;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#x3002;&#x6BD4;&#x5982;&#xFF0C;<code>require(&apos;./circle&apos;)</code>&#x5C06;&#x52A0;&#x8F7D;&#x5F53;&#x524D;&#x811A;&#x672C;&#x540C;&#x4E00;&#x76EE;&#x5F55;&#x7684;circle.js&#x3002;</p>
+<p>&#xFF08;3&#xFF09;&#x5982;&#x679C;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x4EE5;&#x201C;./&#x201C;&#x6216;&#x201D;/&#x201C;&#x5F00;&#x5934;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x52A0;&#x8F7D;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x7684;&#x6838;&#x5FC3;&#x6A21;&#x5757;&#xFF08;&#x4F4D;&#x4E8E;Node&#x7684;&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E2D;&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x4F4D;&#x4E8E;&#x5404;&#x7EA7;node_modules&#x76EE;&#x5F55;&#x7684;&#x5DF2;&#x5B89;&#x88C5;&#x6A21;&#x5757;&#xFF08;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x6216;&#x5C40;&#x90E8;&#x5B89;&#x88C5;&#xFF09;&#x3002;</p>
+<p>&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x811A;&#x672C;<code>/home/user/projects/foo.js</code>&#x6267;&#x884C;&#x4E86;<code>require(&apos;bar.js&apos;)</code>&#x547D;&#x4EE4;&#xFF0C;Node&#x4F1A;&#x4F9D;&#x6B21;&#x641C;&#x7D22;&#x4EE5;&#x4E0B;&#x6587;&#x4EF6;&#x3002;</p>
+<ul>
+<li>/home/user/projects/node_modules/bar.js</li>
+<li>/home/user/node_modules/bar.js</li>
+<li>/home/node_modules/bar.js</li>
+<li>/node_modules/bar.js</li>
+</ul>
+<p>&#x8FD9;&#x6837;&#x8BBE;&#x8BA1;&#x7684;&#x76EE;&#x7684;&#x662F;&#xFF0C;&#x4F7F;&#x5F97;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x5C06;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;&#x672C;&#x5730;&#x5316;&#x3002;</p>
+<p>&#xFF08;4&#xFF09;&#x5982;&#x679C;&#x4F20;&#x5165;require&#x65B9;&#x6CD5;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x90A3;&#x4E48;require&#x4F1A;&#x5148;&#x67E5;&#x770B;&#x8BE5;&#x76EE;&#x5F55;&#x7684;package.json&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x52A0;&#x8F7D;main&#x5B57;&#x6BB5;&#x6307;&#x5B9A;&#x7684;&#x811A;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x5426;&#x5219;&#x53D6;&#x4E0D;&#x5230;main&#x5B57;&#x6BB5;&#xFF0C;&#x5219;&#x4F1A;&#x52A0;&#x8F7D;<code>index.js</code>&#x6587;&#x4EF6;&#x6216;<code>index.node</code>&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x884C;&#x666E;&#x901A;&#x7684;require&#x547D;&#x4EE4;&#x8BED;&#x53E5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> utils = <span class="hljs-built_in">require</span>( <span class="hljs-string">&quot;utils&quot;</span> );
+</code></pre>
+<p>Node&#x5BFB;&#x627E;utils&#x811A;&#x672C;&#x7684;&#x987A;&#x5E8F;&#x662F;&#xFF0C;&#x9996;&#x5148;&#x5BFB;&#x627E;&#x6838;&#x5FC3;&#x6A21;&#x5757;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x6A21;&#x5757;&#xFF0C;&#x63A5;&#x7740;&#x662F;&#x9879;&#x76EE;&#x5B89;&#x88C5;&#x7684;&#x6A21;&#x5757;&#x3002;</p>
+<pre><code class="lang-bash">[
+  <span class="hljs-string">&apos;/usr/local/lib/node&apos;</span>,
+  <span class="hljs-string">&apos;~/.node_modules&apos;</span>,
+  <span class="hljs-string">&apos;./node_modules/utils.js&apos;</span>,
+  <span class="hljs-string">&apos;./node_modules/utils/package.json&apos;</span>,
+  <span class="hljs-string">&apos;./node_modules/utils/index.js&apos;</span>
+]
+</code></pre>
+<p>&#xFF08;5&#xFF09;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#x6CA1;&#x6709;&#x53D1;&#x73B0;&#xFF0C;Node&#x4F1A;&#x5C1D;&#x8BD5;&#x4E3A;&#x6587;&#x4EF6;&#x540D;&#x6DFB;&#x52A0;.js&#x3001;.json&#x3001;.node&#x540E;&#xFF0C;&#x518D;&#x53BB;&#x641C;&#x7D22;&#x3002;.js&#x6587;&#x4EF6;&#x4F1A;&#x4EE5;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x7684;JavaScript&#x811A;&#x672C;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#xFF0C;.json&#x6587;&#x4EF6;&#x4F1A;&#x4EE5;JSON&#x683C;&#x5F0F;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#xFF0C;.node&#x6587;&#x4EF6;&#x4F1A;&#x8BAE;&#x7F16;&#x8BD1;&#x540E;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#x3002;</p>
+<p>&#xFF08;6&#xFF09;&#x5982;&#x679C;&#x60F3;&#x5F97;&#x5230;require&#x547D;&#x4EE4;&#x52A0;&#x8F7D;&#x7684;&#x786E;&#x5207;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x4F7F;&#x7528;require.resolve()&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="%E6%A8%A1%E5%9D%97%E7%9A%84%E7%BC%93%E5%AD%98">&#x6A21;&#x5757;&#x7684;&#x7F13;&#x5B58;</h3>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x52A0;&#x8F7D;&#x67D0;&#x4E2A;&#x6A21;&#x5757;&#x65F6;&#xFF0C;Node&#x4F1A;&#x7F13;&#x5B58;&#x8BE5;&#x6A21;&#x5757;&#x3002;&#x4EE5;&#x540E;&#x518D;&#x52A0;&#x8F7D;&#x8BE5;&#x6A21;&#x5757;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x4ECE;&#x7F13;&#x5B58;&#x53D6;&#x51FA;&#x8BE5;&#x6A21;&#x5757;&#x7684;exports&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./example.js&apos;</span>);
+<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./example.js&apos;</span>).message = <span class="hljs-string">&quot;hello&quot;</span>;
+<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./example.js&apos;</span>).message
+<span class="hljs-comment">// &quot;hello&quot;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x8FDE;&#x7EED;&#x4E09;&#x6B21;&#x4F7F;&#x7528;require&#x547D;&#x4EE4;&#xFF0C;&#x52A0;&#x8F7D;&#x540C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x3002;&#x7B2C;&#x4E8C;&#x6B21;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E3A;&#x8F93;&#x51FA;&#x7684;&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;message&#x5C5E;&#x6027;&#x3002;&#x4F46;&#x662F;&#x7B2C;&#x4E09;&#x6B21;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;message&#x5C5E;&#x6027;&#x4F9D;&#x7136;&#x5B58;&#x5728;&#xFF0C;&#x8FD9;&#x5C31;&#x8BC1;&#x660E;require&#x547D;&#x4EE4;&#x5E76;&#x6CA1;&#x6709;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x662F;&#x8F93;&#x51FA;&#x4E86;&#x7F13;&#x5B58;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x8981;&#x591A;&#x6B21;&#x6267;&#x884C;&#x67D0;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x53EF;&#x4EE5;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x7F13;&#x5B58;&#x662F;&#x6839;&#x636E;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x8BC6;&#x522B;&#x6A21;&#x5757;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x540C;&#x6837;&#x7684;&#x6A21;&#x5757;&#x540D;&#xFF0C;&#x4F46;&#x662F;&#x4FDD;&#x5B58;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;require&#x547D;&#x4EE4;&#x8FD8;&#x662F;&#x4F1A;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x8BE5;&#x6A21;&#x5757;&#x3002;</p>
+<h3 id="%E6%A8%A1%E5%9D%97%E7%9A%84%E5%BE%AA%E7%8E%AF%E5%8A%A0%E8%BD%BD">&#x6A21;&#x5757;&#x7684;&#x5FAA;&#x73AF;&#x52A0;&#x8F7D;</h3>
+<p>&#x5982;&#x679C;&#x53D1;&#x751F;&#x6A21;&#x5757;&#x7684;&#x5FAA;&#x73AF;&#x52A0;&#x8F7D;&#xFF0C;&#x5373;A&#x52A0;&#x8F7D;B&#xFF0C;B&#x53C8;&#x52A0;&#x8F7D;A&#xFF0C;&#x5219;B&#x5C06;&#x52A0;&#x8F7D;A&#x7684;&#x4E0D;&#x5B8C;&#x6574;&#x7248;&#x672C;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// a.js</span>
+exports.x = <span class="hljs-string">&apos;a1&apos;</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;a.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./b.js&apos;</span>).x);
+exports.x = <span class="hljs-string">&apos;a2&apos;</span>;
+
+<span class="hljs-comment">// b.js</span>
+exports.x = <span class="hljs-string">&apos;b1&apos;</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;b.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./a.js&apos;</span>).x);
+exports.x = <span class="hljs-string">&apos;b2&apos;</span>;
+
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;main.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./a.js&apos;</span>).x);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;main.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./b.js&apos;</span>).x);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x662F;&#x4E09;&#x4E2A;JavaScript&#x6587;&#x4EF6;&#x3002;&#x5176;&#x4E2D;&#xFF0C;a.js&#x52A0;&#x8F7D;&#x4E86;b.js&#xFF0C;&#x800C;b.js&#x53C8;&#x52A0;&#x8F7D;a.js&#x3002;&#x8FD9;&#x65F6;&#xFF0C;Node&#x8FD4;&#x56DE;a.js&#x7684;&#x4E0D;&#x5B8C;&#x6574;&#x7248;&#x672C;&#xFF0C;&#x6240;&#x4EE5;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">$ node main.js
+b.js  a1
+a.js  b2
+main.js  a2
+main.js  b2
+</code></pre>
+<p>&#x4FEE;&#x6539;main.js&#xFF0C;&#x518D;&#x6B21;&#x52A0;&#x8F7D;a.js&#x548C;b.js&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// main.js</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;main.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./a.js&apos;</span>).x);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;main.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./b.js&apos;</span>).x);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;main.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./a.js&apos;</span>).x);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;main.js &apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./b.js&apos;</span>).x);
+</code></pre>
+<p>&#x6267;&#x884C;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">$ node main.js
+b.js  a1
+a.js  b2
+main.js  a2
+main.js  b2
+main.js  a2
+main.js  b2
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x52A0;&#x8F7D;a.js&#x548C;b.js&#x65F6;&#xFF0C;&#x4F1A;&#x76F4;&#x63A5;&#x4ECE;&#x7F13;&#x5B58;&#x8BFB;&#x53D6;exports&#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x4EE5;a.js&#x548C;b.js&#x5185;&#x90E8;&#x7684;console.log&#x8BED;&#x53E5;&#x90FD;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x4E86;&#x3002;</p>
+<h3 id="require-main">require.main</h3>
+<p>&#x6B63;&#x5E38;&#x7684;&#x811A;&#x672C;&#x8C03;&#x7528;&#x65F6;&#xFF0C;require.main&#x5C5E;&#x6027;&#x6307;&#x5411;&#x6A21;&#x5757;&#x672C;&#x8EAB;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">require</span>.main === <span class="hljs-built_in">module</span>
+<span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x662F;&#x5728;REPL&#x73AF;&#x5883;&#x4F7F;&#x7528;require&#x547D;&#x4EE4;&#xFF0C;&#x5219;&#x4E0A;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE;false&#x3002;</p>
+<p>&#x901A;&#x8FC7;require.main&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6A21;&#x5757;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6BD4;&#x5982;&#xFF0C;module&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A;filename&#x5C5E;&#x6027;&#xFF08;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x7B49;&#x4E8E; __filename&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;require.main.filename&#x5C5E;&#x6027;&#xFF0C;&#x5F97;&#x77E5;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x7684;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x3002;</p>
+<h2 id="%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
+<ul>
+<li>Addy Osmani, <a href="http://addyosmani.com/writing-modular-js/" target="_blank">Writing Modular JavaScript With AMD, CommonJS &amp; ES Harmony</a></li>
+<li>Pony Foo, <a href="http://blog.ponyfoo.com/2014/08/25/a-gentle-browserify-walkthrough" target="_blank">A Gentle Browserify Walkthrough</a></li>
+<li>Nico Reed, [What is require?]&#xFF08;<a href="https://docs.nodejitsu.com/articles/getting-started/what-is-require&#xFF09;" target="_blank">https://docs.nodejitsu.com/articles/getting-started/what-is-require&#xFF09;</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../nodejs/basic.html" class="navigation navigation-prev " aria-label="Previous page: 概述"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../nodejs/packagejson.html" class="navigation navigation-next " aria-label="Next page: package.json文件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

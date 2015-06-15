@@ -1,10 +1,4 @@
----
-title: Koa 框架
-layout: page
-category: nodejs
-date: 2015-04-17
-modifiedOn: 2015-04-17
----
+
 
 Koa是一个类似于Express的Web开发框架，开发人员也是同一组人，但是使用了Generator函数，进行了架构的重新设计。也就是说，Koa的原理和内部结构很像Express，但是语法和内部结构进行了升级。
 

@@ -1,10 +1,4 @@
----
-title: 表单
-category: htmlapi
-layout: page
-date: 2014-05-29
-modifiedOn: 2014-05-29
----
+
 
 ## 表单的验证
 

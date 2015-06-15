@@ -1,10 +1,4 @@
----
-title: Element对象
-category: dom
-layout: page
-date: 2015-04-15
-modifiedOn: 2015-04-15
----
+
 
 Element对象对应网页的HTML标签元素。每一个HTML标签元素，在DOM树上都会转化成一个Element节点对象（以下简称元素节点）。元素节点的nodeType属性都是1，但是不同HTML标签生成的元素节点是不一样的。JavaScript内部使用不同的构造函数，生成不同的Element节点，比如a标签的节点对象由HTMLAnchorElement()构造函数生成，button标签的节点对象由HTMLButtonElement()构造函数生成。因此，元素节点不是一种对象，而是一组对象。
 
@@ -206,11 +200,11 @@ className属性用来读取和设置当前元素的class属性。它的值是一
 
 classList属性则返回一个类似数组的对象，当前元素节点的每个class就是这个对象的一个成员。
 
-{% highlight html %}
+``` html
 
 <div class="one two three" id="myDiv"></div>
 
-{% endhighlight %}
+```
 
 上面这个div元素的节点对象的className属性和classList属性，分别如下。
 

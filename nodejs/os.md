@@ -1,10 +1,4 @@
----
-title: os模块
-category: nodejs
-layout: page
-date: 2015-03-16
-modifiedOn: 2015-03-16
----
+
 
 os模块用于与硬件设备通信。
 

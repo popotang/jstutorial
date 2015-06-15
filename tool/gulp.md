@@ -1,10 +1,4 @@
----
-title: Gulp：任务自动管理工具
-category: tool
-layout: page
-date: 2014-07-04
-modifiedOn: 2014-07-04
----
+
 
 Gulp与Grunt一样，也是一个自动任务运行器。它充分借鉴了Unix操作系统的管道（pipe）思想，很多人认为，在操作上，它要比Grunt简单。
 

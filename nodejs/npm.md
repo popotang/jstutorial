@@ -1,10 +1,4 @@
----
-title: npm模块管理器
-layout: page
-category: nodejs
-date: 2014-10-24
-modifiedOn: 2014-10-24
----
+
 
 ## 简介
 
@@ -12,7 +6,7 @@ npm有两层含义。一层含义是Node.js的开放式模块登记和管理系�
 
 npm不需要单独安装。在安装node的时候，会连带一起安装npm。node安装完成后，可以用下面的命令，查看一下npm的帮助文件。
 
-{% highlight bash %}
+``` bash
 
 # npm命令列表
 $ npm help
@@ -20,25 +14,25 @@ $ npm help
 # 各个命令的简单用法
 $ npm -l
 
-{% endhighlight %}
+```
 
 下面的命令分别查看npm的版本和配置。
 
-{% highlight bash %}
+``` bash
 
 $ npm -version
 
 $ npm config list -l
 
-{% endhighlight %}
+```
 
 npm的版本可以在Node更新的时候一起更新。如果你想单独更新npm，使用下面的命令。
 
-{% highlight bash %}
+``` bash
 
 npm update -global npm
 
-{% endhighlight %}
+```
 
 上面的命令之所以最后一个参数是npm，是因为npm本身也是Node.js的一个模块。
 
@@ -46,11 +40,11 @@ npm update -global npm
 
 npm的info命令可以查看每个模块的具体信息。比如，查看underscore模块信息的命令是：
 
-{% highlight bash %}
+``` bash
 
 npm info underscore
 
-{% endhighlight %}
+```
 
 上面命令返回一个JavaScript对象，包含了underscore模块的详细信息。
 
@@ -100,42 +94,42 @@ npm info underscore version
 
 默认情况下，npm install 命令是“本地安装”某个模块。
 
-{% highlight bash %}
+``` bash
 
 npm install [package name]
 
-{% endhighlight %}
+```
 
 npm也支持直接输入github地址。
 
-{% highlight bash %}
+``` bash
 
 npm install git://github.com/package/path.git
 npm install git://github.com/package/path.git#0.1.0
 
-{% endhighlight %}
+```
 
 使用安装命令以后，模块文件将下载到当前目录的 node_modules 子目录。
 
 使用global参数，可以“全局安装”某个模块。global参数可以被简化成g参数。
 
-{% highlight bash %}
+``` bash
 
 $ sudo npm install -global [package name]
 
 $ sudo npm install -g [package name]
 
-{% endhighlight %}
+```
 
 install命令总是安装模块的最新版本，如果要安装模块的特定版本，可以在模块名后面加上@和版本号。
 
-{% highlight bash %}
+``` bash
 
 $ npm install sax@latest
 $ npm install sax@0.1.1
 $ npm install sax@">=0.1.0 <0.2.0"
 
-{% endhighlight %}
+```
 
 install命令可以使用不同参数，指定所安装的模块属于哪一种性质的依赖关系，即出现在packages.json文件的哪一项中。
 
@@ -161,13 +155,13 @@ $ npm i -D gulp
 
 一旦安装了某个模块，就可以在代码中用require命令调用这个模块。
 
-{% highlight javascript %}
+``` javascript
 
 var backbone = require('backbone')
 
 console.log(backbone.VERSION)
 
-{% endhighlight %}
+```
 
 ## 语义版本（SemVer）
 
@@ -210,57 +204,57 @@ npm允许使用特殊符号，指定所要使用的版本范围，假定当前�
 
 npm update 命令可以升级本地安装的模块。
 
-{% highlight bash %}
+``` bash
 
 npm update [package name]
 
-{% endhighlight %}
+```
 
 加上global参数，可以升级全局安装的模块。
 
-{% highlight bash %}
+``` bash
 
 npm update -global [package name]
 
-{% endhighlight %}
+```
 
 npm uninstall 命令，删除本地安装的模块。
 
-{% highlight bash %}
+``` bash
 
 npm uninstall [package name]
 
-{% endhighlight %}
+```
 
 加上global参数，可以删除全局安装的模块。
 
-{% highlight bash %}
+``` bash
 
 sudo npm uninstall [package name] -global
 
-{% endhighlight %}
+```
 
 ## npm list
 
 npm list命令，默认列出当前目录安装的所有模块。如果使用global参数，就是列出全局安装的模块。
 
-{% highlight bash %}
+``` bash
 
 npm list
 
 npm -global list
 
-{% endhighlight %}
+```
 
 ## npm search
 
 向服务器端搜索某个模块，使用search命令（可使用正则搜索）。
 
-{% highlight bash %}
+``` bash
 
 npm search [搜索词]
 
-{% endhighlight %}
+```
 
 如果不加搜索词，npm search 默认返回服务器端的所有模块。
 
@@ -303,7 +297,7 @@ Available scripts in the user-service package:
 
 下面是另一个package.json文件的例子。
 
-{% highlight javascript %}
+``` javascript
 
 "scripts": {
   "watch": "watchify client/main.js -o public/app.js -v",
@@ -312,27 +306,27 @@ Available scripts in the user-service package:
   "test": "node test/all.js"
 },
 
-{% endhighlight %}
+```
 
 上面代码在scripts项，定义了四个别名，每个别名都有对应的脚本命令。
 
-{% highlight bash %}
+``` bash
 
 npm run watch
 npm run build
 npm run start
 npm run test
 
-{% endhighlight %}
+```
 
 其中，start和test属于特殊命令，可以省略run。
 
-{% highlight bash %}
+``` bash
 
 npm start
 npm test
 
-{% endhighlight %}
+```
 
 如果希望一个操作的输出，是另一个操作的输入，可以借用Linux系统的管道命令，将两个操作连在一起。
 
@@ -422,43 +416,43 @@ browserify browser/main.js | uglifyjs -mc > static/bundle.js
 
 先在模块目录（src/myModule）下运行npm link命令。
 
-{% highlight bash %}
+``` bash
 
 src/myModule$ npm link
 
-{% endhighlight %}
+```
 
 上面的命令会在npm的全局模块目录内（比如/usr/local/lib/node_modules/），生成一个符号链接文件，该文件的名字就是package.json文件中指定的文件名。
 
-{% highlight bash %}
+``` bash
 
 /usr/local/lib/node_modules/myModule -> src/myModule
 
-{% endhighlight %}
+```
 
 然后，切换到你需要放置该模块的项目目录，再次运行npm link命令，并指定模块名。
 
-{% highlight bash %}
+``` bash
 
 src/myProject$ npm link myModule
 
-{% endhighlight %}
+```
 
 上面命令等同于生成了本地模块的符号链接。
 
-{% highlight bash %}
+``` bash
 
 src/myProject/node_modules/myModule -> /usr/local/lib/node_modules/myModule
 
-{% endhighlight %}
+```
 
 然后，就可以在你的项目中，加载该模块了。
 
-{% highlight javascript %}
+``` javascript
 
 var myModule = require('myModule');
 
-{% endhighlight %}
+```
 
 这样一来，myModule的任何变化，都可以直接在myProject中调用。但是，同时也出现了风险，任何在myProject目录中对myModule，都会反映到模块的源码中。
 
@@ -483,11 +477,11 @@ src/myProject$ npm link myModule
 
 如果你的项目不再需要该模块，可以在项目目录内使用npm unlink命令，删除符号链接。
 
-{% highlight bash %}
+``` bash
 
 src/myProject$ npm unlink myModule
 
-{% endhighlight %}
+```
 
 一般来说，npm公共模块都安装在系统目录（比如/usr/local/lib/），普通用户没有写入权限，需要用到sudo命令。这不是很方便，我们可以在没有root的情况下，用好npm。
 
@@ -516,21 +510,21 @@ export PATH=~/npm/bin:$PATH
 
 在发布你的模块之前，需要先设定个人信息。
 
-{% highlight bash %}
+``` bash
 
 npm set init.author.name "xxx"
 npm set init.author.email "xxx@gmail.com"
 npm set init.author.url "http://xxx.com"
 
-{% endhighlight %}
+```
 
 然后，向npm系统申请用户名。
 
-{% highlight bash %}
+``` bash
 
 npm adduser
 
-{% endhighlight %}
+```
 
 运行上面的命令之后，屏幕上会提示输入用户名，然后是输入Email地址和密码。
 
@@ -538,11 +532,11 @@ npm adduser
 
 npm模块就是一个遵循CommonJS规范的JavaScript脚本文件。此外，在模块目录中还必须有一个提供自身信息的package.json文件，一般采用npm init命令生成这个文件。
 
-{% highlight bash %}
+``` bash
 
 npm init
 
-{% endhighlight %}
+```
 
 运行上面的命令，会提示回答一系列问题，结束后自动生成package.json文件。
 
@@ -550,7 +544,7 @@ package.json文件中的main属性，指定模块加载的入口文件，默认�
 
 下面是一个例子，将HTML文件中的特殊字符转为HTML实体。
 
-{% highlight javascript %}
+``` javascript
 
 /**
  * Escape special characters in the given string of html.
@@ -584,17 +578,17 @@ module.exports = {
   }
 };
 
-{% endhighlight %}
+```
 
 完成代码以后，再加一个README.md文件，用来给出说明文本。
 
 最后，使用npm publish命令发布。
 
-{% highlight bash %}
+``` bash
 
 npm publish
 
-{% endhighlight %}
+```
 
 ## npm version
 

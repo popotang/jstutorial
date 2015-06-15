@@ -1,10 +1,4 @@
----
-title: fs 模块
-layout: page
-category: nodejs
-date: 2015-02-08
-modifiedOn: 2015-02-08
----
+
 
 fs是filesystem的缩写，该模块提供本地文件的读写能力，基本上是POSIX文件操作命令的简单包装。但是，这个模块几乎对所有操作提供异步和同步两种操作方式，供开发者选择。
 
@@ -53,13 +47,13 @@ fs.writeFileSync(fileName, str, 'utf8');
 
 exists方法用来判断给定路径是否存在，然后不管结果如何，都会调用回调函数。
 
-{% highlight javascript %}
+``` javascript
 
 fs.exists('/path/to/file', function (exists) {
   util.debug(exists ? "it's there" : "no file!");
 });
 
-{% endhighlight %}
+```
 
 上面代码表明，回调函数的参数是一个表示文件是否存在的布尔值。
 
@@ -67,14 +61,14 @@ fs.exists('/path/to/file', function (exists) {
 
 下面的例子是如果给定目录存在，就删除它。
 
-{% highlight javascript %}
+``` javascript
 
 if(fs.exists(outputFolder)) {
   console.log("Removing "+outputFolder);
   fs.rmdir(outputFolder);
 }
 
-{% endhighlight %}
+```
 
 ## mkdir()，writeFile()，readfile()
 
@@ -107,7 +101,7 @@ fs.writeFile('./helloDir/message.txt', 'Hello Node', function (err) {
 
 readfile方法用于读取文件内容。
 
-{% highlight javascript %}
+``` javascript
 
 var fs = require('fs');
 
@@ -116,7 +110,7 @@ fs.readFile('./helloDir/message.txt','UTF-8' ,function (err, data) {
   console.log(data);
 });
 
-{% endhighlight %}
+```
 
 上面代码使用readFile方法读取文件。readFile方法的第一个参数是文件名，第二个参数是文件编码，第三个参数是回调函数。可用的文件编码包括“ascii”、“utf8”和“base64”。如果没有指定文件编码，返回的是原始的缓存二进制数据，这时需要调用buffer对象的toString方法，将其转为字符串。
 
@@ -146,7 +140,7 @@ for(var i = 1; i <= 1000; i++) {
 
 这三个方法是建立目录、写入文件、读取文件的同步版本。
 
-{% highlight javascript %}
+``` javascript
 
 fs.mkdirSync('./helloDirSync',0777);
 fs.writeFileSync('./helloDirSync/message.txt', 'Hello Node');
@@ -154,7 +148,7 @@ var data = fs.readFileSync('./helloDirSync/message.txt','UTF-8');
 console.log('file created with contents:');
 console.log(data);
 
-{% endhighlight %}
+```
 
 对于流量较大的服务器，最好还是采用异步操作，因为同步操作时，只有前一个操作结束，才会开始后一个操作，如果某个操作特别耗时（常常发生在读写数据时），会导致整个程序停顿。
 
@@ -162,7 +156,7 @@ console.log(data);
 
 readdir方法用于读取目录，返回一个所包含的文件和子目录的数组。
 
-{% highlight javascript %}
+``` javascript
 
 fs.readdir(process.cwd(), function (err, files) {
   if (err) {
@@ -183,7 +177,7 @@ fs.readdir(process.cwd(), function (err, files) {
   });
 });
 
-{% endhighlight %}
+```
 
 ## stat()
 

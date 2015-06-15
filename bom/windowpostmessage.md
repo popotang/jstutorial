@@ -1,10 +1,4 @@
----
-title: 同域限制和window.postMessage方法
-category: bom
-layout: page
-date: 2013-09-27
-modifiedOn: 2013-09-27
----
+
 
 ## 概述
 
@@ -12,29 +6,29 @@ modifiedOn: 2013-09-27
 
 window.postMessage方法就是用来在某种程度上，绕过同域限制，实现不同域名的窗口（包括iframe窗口）之间的通信。它的格式如下。
 
-{% highlight javascript %}
+``` javascript
 
 targetWindow.postMessage(message, targetURL[, transferObject]);
 
-{% endhighlight %}
+```
 
 上面代码的targetWindow是指向目标窗口的变量，message是要发送的信息，targetURL是指定目标窗口的网址，不符合该网址就不发送信息，transferObject则是跟随信息一起发送的Transferable对象。
 
 下面是一个postMessage方法的实例。假定当前网页弹出一个新窗口。
 
-{% highlight javascript %}
+``` javascript
 
 var popup = window.open(...popup details...);
 
 popup.postMessage("Hello World!", "http://example.org");
 
-{% endhighlight %}
+```
 
 上面代码的postMessage方法的第一个参数是实际发送的信息，第二个参数是指定发送对象的域名必须是example.org。如果对方窗口不是这个域名，信息不会发送出去。
 
 然后，在当前网页上监听message事件。
 
-{% highlight javascript %}
+``` javascript
 
 window.addEventListener("message", receiveMessage, false);
 
@@ -50,7 +44,7 @@ function receiveMessage(event) {
 
 }
 
-{% endhighlight %}
+```
 
 上面代码指定message事件的回调函数为receiveMessage，一旦收到其他窗口发来的信息，receiveMessage函数就会被调用。receiveMessage函数接受一个event事件对象作为参数，该对象的origin属性表示信息的来源网址，如果该网址不符合要求，就立刻返回，不再进行下一步处理。event.data属性则包含了实际发送过来的信息，event.source属性，指向当前网页发送信息的窗口对象。
 

@@ -1,0 +1,2299 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>deferred对象 | 说明</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../jquery/jquery-free.html" />
+    
+    
+    <link rel="prev" href="../jquery/plugin.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="8.12" data-basepath=".." data-revision="Mon Jun 15 2015 13:31:01 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 导论</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2" data-path="introduction/preface.html">
+            
+                
+                    <a href="../introduction/preface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="introduction/why.html">
+            
+                
+                    <a href="../introduction/why.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        为什么学习JavaScript？
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introduction/history.html">
+            
+                
+                    <a href="../introduction/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        JavaScript的历史
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 基本语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3" data-path="grammar/basic.html">
+            
+                
+                    <a href="../grammar/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="grammar/number.html">
+            
+                
+                    <a href="../grammar/number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        数值
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="grammar/string.html">
+            
+                
+                    <a href="../grammar/string.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="grammar/object.html">
+            
+                
+                    <a href="../grammar/object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="grammar/array.html">
+            
+                
+                    <a href="../grammar/array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        数组
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="grammar/function.html">
+            
+                
+                    <a href="../grammar/function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="grammar/operator.html">
+            
+                
+                    <a href="../grammar/operator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="grammar/conversion.html">
+            
+                
+                    <a href="../grammar/conversion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        数据类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="grammar/error.html">
+            
+                
+                    <a href="../grammar/error.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        错误处理机制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="grammar/style.html">
+            
+                
+                    <a href="../grammar/style.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        编程风格
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 标准库</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4" data-path="stdlib/object.html">
+            
+                
+                    <a href="../stdlib/object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Object对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="stdlib/array.html">
+            
+                
+                    <a href="../stdlib/array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Array 对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="stdlib/wrapper.html">
+            
+                
+                    <a href="../stdlib/wrapper.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        包装对象和Boolean对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="stdlib/number.html">
+            
+                
+                    <a href="../stdlib/number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Number对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="stdlib/string.html">
+            
+                
+                    <a href="../stdlib/string.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        String对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="stdlib/math.html">
+            
+                
+                    <a href="../stdlib/math.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Math对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="stdlib/date.html">
+            
+                
+                    <a href="../stdlib/date.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        Date对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="stdlib/regexp.html">
+            
+                
+                    <a href="../stdlib/regexp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        RegExp对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="stdlib/json.html">
+            
+                
+                    <a href="../stdlib/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        JSON对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="stdlib/arraybuffer.html">
+            
+                
+                    <a href="../stdlib/arraybuffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        ArrayBuffer：类型化数组
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 面向对象编程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5" data-path="oop/basic.html">
+            
+                
+                    <a href="../oop/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="oop/encapsulation.html">
+            
+                
+                    <a href="../oop/encapsulation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        封装
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="oop/inheritance.html">
+            
+                
+                    <a href="../oop/inheritance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="oop/module.html">
+            
+                
+                    <a href="../oop/module.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        模块化编程
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> DOM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6" data-path="dom/node.html">
+            
+                
+                    <a href="../dom/node.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Node节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="dom/document.html">
+            
+                
+                    <a href="../dom/document.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Document节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="dom/element.html">
+            
+                
+                    <a href="../dom/element.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Element节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="dom/text.html">
+            
+                
+                    <a href="../dom/text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Text节点和DocumentFragment节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="dom/event.html">
+            
+                
+                    <a href="../dom/event.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Event对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="dom/css.html">
+            
+                
+                    <a href="../dom/css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        CSS操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="dom/mutationobserver.html">
+            
+                
+                    <a href="../dom/mutationobserver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Mutation Observer
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 浏览器对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7" data-path="bom/engine.html">
+            
+                
+                    <a href="../bom/engine.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        浏览器的JavaScript引擎
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="bom/timer.html">
+            
+                
+                    <a href="../bom/timer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        定时器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="bom/window.html">
+            
+                
+                    <a href="../bom/window.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        window对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="bom/history.html">
+            
+                
+                    <a href="../bom/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        History对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="bom/ajax.html">
+            
+                
+                    <a href="../bom/ajax.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        Ajax
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="bom/windowpostmessage.html">
+            
+                
+                    <a href="../bom/windowpostmessage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        window.postMessage方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="bom/webstorage.html">
+            
+                
+                    <a href="../bom/webstorage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                        Web Storage：浏览器端数据储存机制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="bom/indexeddb.html">
+            
+                
+                    <a href="../bom/indexeddb.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                        IndexedDB：浏览器端数据库
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="bom/notification.html">
+            
+                
+                    <a href="../bom/notification.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.15.</b>
+                        
+                        Web Notification API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="bom/performance.html">
+            
+                
+                    <a href="../bom/performance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.16.</b>
+                        
+                        Performance API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="bom/mobile.html">
+            
+                
+                    <a href="../bom/mobile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.17.</b>
+                        
+                        移动设备API
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> HTML网页的API</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.8" data-path="htmlapi/elements.html">
+            
+                
+                    <a href="../htmlapi/elements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        HTML网页元素
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="htmlapi/canvas.html">
+            
+                
+                    <a href="../htmlapi/canvas.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        Canvas
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="htmlapi/svg.html">
+            
+                
+                    <a href="../htmlapi/svg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        SVG图像
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="htmlapi/form.html">
+            
+                
+                    <a href="../htmlapi/form.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        表单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="htmlapi/file.html">
+            
+                
+                    <a href="../htmlapi/file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        文件与二进制数据的操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="htmlapi/webworker.html">
+            
+                
+                    <a href="../htmlapi/webworker.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        Web Worker
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="htmlapi/eventsource.html">
+            
+                
+                    <a href="../htmlapi/eventsource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                        SSE：服务器发送事件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="htmlapi/pagevisibility.html">
+            
+                
+                    <a href="../htmlapi/pagevisibility.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.15.</b>
+                        
+                        Page Visiblity
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="htmlapi/fullscreen.html">
+            
+                
+                    <a href="../htmlapi/fullscreen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.16.</b>
+                        
+                        FullScreen API：全屏操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="htmlapi/webspeech.html">
+            
+                
+                    <a href="../htmlapi/webspeech.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.17.</b>
+                        
+                        Web Speech
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="htmlapi/requestanimationframe.html">
+            
+                
+                    <a href="../htmlapi/requestanimationframe.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.18.</b>
+                        
+                        requestAnimationFrame
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="htmlapi/websocket.html">
+            
+                
+                    <a href="../htmlapi/websocket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.19.</b>
+                        
+                        WebSocket
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="htmlapi/webrtc.html">
+            
+                
+                    <a href="../htmlapi/webrtc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.20.</b>
+                        
+                        WebRTC
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="htmlapi/webcomponents.html">
+            
+                
+                    <a href="../htmlapi/webcomponents.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.21.</b>
+                        
+                        Web Components
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> jQuery</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.9" data-path="jquery/basic.html">
+            
+                
+                    <a href="../jquery/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.9.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="jquery/utility.html">
+            
+                
+                    <a href="../jquery/utility.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.10.</b>
+                        
+                        工具方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="jquery/plugin.html">
+            
+                
+                    <a href="../jquery/plugin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.11.</b>
+                        
+                        插件开发
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="8.12" data-path="jquery/deferred.html">
+            
+                
+                    <a href="../jquery/deferred.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.12.</b>
+                        
+                        deferred对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="jquery/jquery-free.html">
+            
+                
+                    <a href="../jquery/jquery-free.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.13.</b>
+                        
+                        如何做到jQuery-free？
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> 开发工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.10" data-path="tool/console.html">
+            
+                
+                    <a href="../tool/console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        console对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.11" data-path="tool/phantomjs.html">
+            
+                
+                    <a href="../tool/phantomjs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                        PhantomJS
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.12" data-path="tool/bower.html">
+            
+                
+                    <a href="../tool/bower.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.12.</b>
+                        
+                        Bower：客户端库管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.13" data-path="tool/grunt.html">
+            
+                
+                    <a href="../tool/grunt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.13.</b>
+                        
+                        Grunt：任务自动管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.14" data-path="tool/gulp.html">
+            
+                
+                    <a href="../tool/gulp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.14.</b>
+                        
+                        Gulp：任务自动管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.15" data-path="tool/browserify.html">
+            
+                
+                    <a href="../tool/browserify.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.15.</b>
+                        
+                        Browserify：浏览器加载Node.js模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.16" data-path="tool/requirejs.html">
+            
+                
+                    <a href="../tool/requirejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.16.</b>
+                        
+                        RequireJS和AMD规范
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.17" data-path="tool/sourcemap.html">
+            
+                
+                    <a href="../tool/sourcemap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.17.</b>
+                        
+                        Source map
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.18" data-path="tool/testing.html">
+            
+                
+                    <a href="../tool/testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.18.</b>
+                        
+                        JavaScript 测试
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+            <span><b>10.</b> JavaScript高级语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.11" data-path="advanced/asynchronous.html">
+            
+                
+                    <a href="../advanced/asynchronous.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.11.</b>
+                        
+                        异步编程的模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.12" data-path="advanced/fsm.html">
+            
+                
+                    <a href="../advanced/fsm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.12.</b>
+                        
+                        有限状态机
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.13" data-path="advanced/backbonejs.html">
+            
+                
+                    <a href="../advanced/backbonejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.13.</b>
+                        
+                        MVC模式和Backbone.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.14" data-path="advanced/strict.html">
+            
+                
+                    <a href="../advanced/strict.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.14.</b>
+                        
+                        严格模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.15" data-path="advanced/ecmascript6.html">
+            
+                
+                    <a href="../advanced/ecmascript6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.15.</b>
+                        
+                        ECMAScript 6 介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 附录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.12" data-path="appendix/api.html">
+            
+                
+                    <a href="../appendix/api.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.12.</b>
+                        
+                        JavaScript API列表
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+            <span><b>12.</b> 草稿一：函数库</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.13" data-path="library/underscore.html">
+            
+                
+                    <a href="../library/underscore.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.13.</b>
+                        
+                        Underscore.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="library/modernizr.html">
+            
+                
+                    <a href="../library/modernizr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.14.</b>
+                        
+                        Modernizr
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.15" data-path="library/datejs.html">
+            
+                
+                    <a href="../library/datejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.15.</b>
+                        
+                        Datejs
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.16" data-path="library/d3.html">
+            
+                
+                    <a href="../library/d3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.16.</b>
+                        
+                        D3.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.17" data-path="library/designpattern.html">
+            
+                
+                    <a href="../library/designpattern.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.17.</b>
+                        
+                        设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.18" data-path="library/sorting.html">
+            
+                
+                    <a href="../library/sorting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.18.</b>
+                        
+                        排序算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" >
+            
+            <span><b>13.</b> 草稿二：Node.js</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.14" data-path="nodejs/basic.html">
+            
+                
+                    <a href="../nodejs/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.14.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.15" data-path="nodejs/commonjs.html">
+            
+                
+                    <a href="../nodejs/commonjs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.15.</b>
+                        
+                        CommonJS规范
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.16" data-path="nodejs/packagejson.html">
+            
+                
+                    <a href="../nodejs/packagejson.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.16.</b>
+                        
+                        package.json文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.17" data-path="nodejs/npm.html">
+            
+                
+                    <a href="../nodejs/npm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.17.</b>
+                        
+                        npm模块管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.18" data-path="nodejs/fs.html">
+            
+                
+                    <a href="../nodejs/fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.18.</b>
+                        
+                        fs模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.19" data-path="nodejs/path.html">
+            
+                
+                    <a href="../nodejs/path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.19.</b>
+                        
+                        path模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.20" data-path="nodejs/process.html">
+            
+                
+                    <a href="../nodejs/process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.20.</b>
+                        
+                        process对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.21" data-path="nodejs/buffer.html">
+            
+                
+                    <a href="../nodejs/buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.21.</b>
+                        
+                        Buffer对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.22" data-path="nodejs/events.html">
+            
+                
+                    <a href="../nodejs/events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.22.</b>
+                        
+                        Events模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.23" data-path="nodejs/stream.html">
+            
+                
+                    <a href="../nodejs/stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.23.</b>
+                        
+                        Stream接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.24" data-path="nodejs/child-process.html">
+            
+                
+                    <a href="../nodejs/child-process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.24.</b>
+                        
+                        Child Process模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.25" data-path="nodejs/http.html">
+            
+                
+                    <a href="../nodejs/http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.25.</b>
+                        
+                        Http模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.26" data-path="nodejs/assert.html">
+            
+                
+                    <a href="../nodejs/assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.26.</b>
+                        
+                        assert模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.27" data-path="nodejs/cluster.html">
+            
+                
+                    <a href="../nodejs/cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.27.</b>
+                        
+                        Cluster模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.28" data-path="nodejs/os.html">
+            
+                
+                    <a href="../nodejs/os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.28.</b>
+                        
+                        OS模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.29" data-path="nodejs/net.html">
+            
+                
+                    <a href="../nodejs/net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.29.</b>
+                        
+                        Net模块和DNS模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.30" data-path="nodejs/express.html">
+            
+                
+                    <a href="../nodejs/express.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.30.</b>
+                        
+                        Express框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.31" data-path="nodejs/koa.html">
+            
+                
+                    <a href="../nodejs/koa.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.31.</b>
+                        
+                        Koa框架
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >说明</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="%E6%A6%82%E8%BF%B0">&#x6982;&#x8FF0;</h2>
+<p>deferred&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x4E86;&#x5C06;&#x8981;&#x5B8C;&#x6210;&#x7684;&#x67D0;&#x79CD;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x3002;&#x5B83;&#x662F;jQuery&#x5BF9;Promises&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x3002;jQuery&#x7684;&#x6240;&#x6709;Ajax&#x64CD;&#x4F5C;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;deferred&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x7B80;&#x5355;&#x8BF4;&#xFF0C;Promises&#x662F;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x901A;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x626E;&#x6F14;&#x4EE3;&#x7406;&#x4EBA;&#xFF08;proxy&#xFF09;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x5C06;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x5305;&#x88C5;&#x6210;&#x5177;&#x6709;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#x7279;&#x6027;&#x7684;&#x7279;&#x6B8A;&#x5BF9;&#x8C61;&#x3002;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x5178;&#x578B;&#x4F8B;&#x5B50;&#x5C31;&#x662F;Ajax&#x64CD;&#x4F5C;&#x3001;&#x7F51;&#x9875;&#x52A8;&#x753B;&#x3001;web worker&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x7531;&#x4E8E;JavaScript&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x64CD;&#x4F5C;&#x8017;&#x65F6;&#x5F88;&#x957F;&#xFF0C;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x5C31;&#x5FC5;&#x9700;&#x6392;&#x961F;&#x7B49;&#x5F85;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x5931;&#x53BB;&#x54CD;&#x5E94;&#xFF0C;&#x901A;&#x5E38;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#x5C06;&#x90A3;&#x4E9B;&#x6392;&#x5728;&#x540E;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5199;&#x6210;&#x201C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x201D;&#xFF08;callback&#xFF09;&#x7684;&#x5F62;&#x5F0F;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E00;&#x4E9B;&#x663E;&#x8457;&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5F80;&#x5F80;&#x5199;&#x6210;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5F62;&#x6210;&#x6240;&#x8C13;&#x7684;&#x201C;&#x6301;&#x7EED;&#x4F20;&#x9012;&#x98CE;&#x683C;&#x201D;&#xFF08;&#x5373;&#x53C2;&#x6570;&#x5C31;&#x662F;&#x4E0B;&#x4E00;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;Continuation-passing style&#xFF09;&#xFF0C;&#x5BFC;&#x81F4;&#x51FD;&#x6570;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x975E;&#x5E38;&#x6DF7;&#x4E71;&#xFF0C;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x7684;&#x53EF;&#x9605;&#x8BFB;&#x6027;&#x5DEE;&#xFF1B;</li>
+<li>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5F80;&#x5F80;&#x53EA;&#x80FD;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x6539;&#x5199;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x9664;&#x4E86;&#x6B63;&#x5E38;&#x7684;&#x62A5;&#x9519;&#x673A;&#x5236;&#xFF0C;&#x9519;&#x8BEF;&#x8FD8;&#x53EF;&#x80FD;&#x901A;&#x8FC7;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x9664;&#x9519;&#x548C;&#x8C03;&#x8BD5;&#x7684;&#x96BE;&#x5EA6;&#x3002;</li>
+<li>&#x6B63;&#x5E38;&#x7684;&#x51FD;&#x6570;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x53EF;&#x4EE5;&#x533A;&#x5206;&#x5F97;&#x5F88;&#x6E05;&#x695A;&#xFF0C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F7F;&#x5F97;&#x51FD;&#x6570;&#x7684;&#x8F93;&#x51FA;&#x4E0D;&#x518D;&#x91CD;&#x8981;&#x3002;</li>
+</ul>
+<p>Promises&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x800C;&#x63D0;&#x51FA;&#x7684;&#xFF0C;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x53D6;&#x4EE3;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x6210;&#x4E3A;&#x975E;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x5B83;&#x7684;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x5C31;&#x662F;&#x8BA9;&#x975E;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x90FD;&#x9488;&#x5BF9;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x6765;&#x5B8C;&#x6210;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x5047;&#x5B9A;ajax&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> promise = get(<span class="hljs-string">&apos;http://www.example.com&apos;</span>);
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;Promise&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A;then&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x4E00;&#x65E6;&#x975E;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#xFF0C;&#x5C31;&#x8C03;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+promise.then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(content)</span> </span>{
+  <span class="hljs-built_in">console</span>.log(content)
+})
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5C06;&#x4E0A;&#x9762;&#x4E24;&#x6BB5;&#x4EE3;&#x7801;&#x5408;&#x5E76;&#x8D77;&#x6765;&#xFF0C;&#x8FD9;&#x6837;&#x7A0B;&#x5E8F;&#x7684;&#x6D41;&#x7A0B;&#x770B;&#x5F97;&#x66F4;&#x6E05;&#x695A;&#x3002;</p>
+<pre><code class="lang-javascript">
+get(<span class="hljs-string">&apos;http://www.example.com&apos;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(content)</span> </span>{
+  <span class="hljs-built_in">console</span>.log(content)
+})
+</code></pre>
+<p>&#x5728;1.7&#x7248;&#x4E4B;&#x524D;&#xFF0C;jQuery&#x7684;Ajax&#x64CD;&#x4F5C;&#x91C7;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.ajax({
+    url:<span class="hljs-string">&quot;/echo/json/&quot;</span>,
+    success: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(response)</span>
+    </span>{
+       <span class="hljs-built_in">console</span>.info(response.name);
+    }
+});
+</code></pre>
+<p>1.7&#x7248;&#x4E4B;&#x540E;&#xFF0C;Ajax&#x64CD;&#x4F5C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;Promise&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x53EF;&#x4EE5;&#x7528;then&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.ajax({
+    url: <span class="hljs-string">&quot;/echo/json/&quot;</span>,
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(response)</span> </span>{
+    <span class="hljs-built_in">console</span>.info(response.name);
+});
+</code></pre>
+<h2 id="deferred%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%96%B9%E6%B3%95">deferred&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;</h2>
+<h3 id="%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95">&#x57FA;&#x672C;&#x7528;&#x6CD5;</h3>
+<p><strong>&#xFF08;1&#xFF09;&#x751F;&#x6210;deferred&#x5BF9;&#x8C61;</strong></p>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x901A;&#x8FC7;$.Deferred()&#x65B9;&#x6CD5;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;deferred&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> deferred = $.Deferred();
+</code></pre>
+<p><strong>&#xFF08;2&#xFF09;deferred&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;</strong></p>
+<p>deferred&#x5BF9;&#x8C61;&#x6709;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x3002;</p>
+<ul>
+<li>pending&#xFF1A;&#x8868;&#x793A;&#x64CD;&#x4F5C;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x3002;</li>
+<li>resolved&#xFF1A;&#x8868;&#x793A;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x3002;</li>
+<li>rejected&#xFF1A;&#x8868;&#x793A;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#x3002;</li>
+</ul>
+<p>state&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x8FD4;&#x56DE;deferred&#x5BF9;&#x8C61;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.Deferred().state() <span class="hljs-comment">// &apos;pending&apos;</span>
+$.Deferred().resolve().state() <span class="hljs-comment">// &apos;resolved&apos;</span>
+$.Deferred().reject().state() <span class="hljs-comment">// &apos;rejected&apos;</span>
+</code></pre>
+<p><strong>&#xFF08;3&#xFF09;&#x6539;&#x53D8;&#x72B6;&#x6001;&#x7684;&#x65B9;&#x6CD5;</strong></p>
+<p>resolve&#x65B9;&#x6CD5;&#x5C06;deferred&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x4ECE;pending&#x6539;&#x4E3A;resolved&#xFF0C;reject&#x65B9;&#x6CD5;&#x5219;&#x5C06;&#x72B6;&#x6001;&#x4ECE;pending&#x6539;&#x4E3A;rejected&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> deferred = $.Deferred();
+
+deferred.resolve(<span class="hljs-string">&quot;hello world&quot;</span>);
+</code></pre>
+<p>resolve&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x4F20;&#x9012;&#x7ED9;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p><strong>&#xFF08;4&#xFF09;&#x7ED1;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;</strong></p>
+<p>deferred&#x5BF9;&#x8C61;&#x5728;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002; </p>
+<p>done&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x72B6;&#x6001;&#x53D8;&#x4E3A;resolved&#xFF08;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#xFF09;&#x65F6;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF1B;fail&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x72B6;&#x6001;&#x53D8;&#x4E3A;rejected&#xFF08;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#xFF09;&#x65F6;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF1B;always&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#xFF0C;&#x4E0D;&#x7BA1;&#x72B6;&#x6001;&#x53D8;&#x4E3A;resolved&#x6216;rejected&#xFF0C;&#x90FD;&#x4F1A;&#x89E6;&#x53D1;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> deferred = $.Deferred();
+
+deferred.done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(value)</span> </span>{
+   <span class="hljs-built_in">console</span>.log(value);
+}).resolve(<span class="hljs-string">&apos;hello world&apos;</span>);
+<span class="hljs-comment">// hello world</span>
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#x90FD;&#x8FD4;&#x56DE;&#x7684;&#x539F;&#x6709;&#x7684;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x94FE;&#x5F0F;&#x5199;&#x6CD5;&#xFF0C;&#x5728;&#x540E;&#x9762;&#x518D;&#x94FE;&#x63A5;&#x522B;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x5305;&#x62EC;done&#x548C;fail&#x5728;&#x5185;&#xFF09;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.Deferred().done(f1).fail(f2).always(f3);
+</code></pre>
+<h3 id="notify-%E5%92%8C-progress">notify() &#x548C; progress()</h3>
+<p>progress()&#x7528;&#x6765;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x8C03;&#x7528;notify()&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8BE5;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5C06;&#x6267;&#x884C;&#x3002;&#x5B83;&#x7684;&#x7528;&#x610F;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x4F7F;&#x5F97;&#x5728;&#x975E;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x5B9A;&#x671F;&#x8FD4;&#x56DE;&#x8FDB;&#x5EA6;&#x6761;&#x7684;&#x8FDB;&#x5EA6;&#x3002;</p>
+<pre><code class="lang-javascript">
+    <span class="hljs-keyword">var</span> userProgress = $.Deferred();
+    <span class="hljs-keyword">var</span> $profileFields = $(<span class="hljs-string">&quot;input&quot;</span>);
+    <span class="hljs-keyword">var</span> totalFields = $profileFields.length
+
+    userProgress.progress(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(filledFields)</span> </span>{
+        <span class="hljs-keyword">var</span> pctComplete = (filledFields/totalFields)*<span class="hljs-number">100</span>;
+        $(<span class="hljs-string">&quot;#progress&quot;</span>).html(pctComplete.toFixed(<span class="hljs-number">0</span>));
+    }); 
+
+    userProgress.done(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+        $(<span class="hljs-string">&quot;#thanks&quot;</span>).html(<span class="hljs-string">&quot;Thanks for completing your profile!&quot;</span>).show();
+    });
+
+    $(<span class="hljs-string">&quot;input&quot;</span>).on(<span class="hljs-string">&quot;change&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">var</span> filledFields = $profileFields.filter(<span class="hljs-string">&quot;[value!=&apos;&apos;]&quot;</span>).length;
+        userProgress.notify(filledFields);
+        <span class="hljs-keyword">if</span> (filledFields == totalFields) {
+            userProgress.resolve();
+        }
+    });
+</code></pre>
+<h3 id="then%E6%96%B9%E6%B3%95">then&#x65B9;&#x6CD5;</h3>
+<p><strong>&#xFF08;1&#xFF09;&#x6982;&#x8FF0;</strong></p>
+<p>then&#x65B9;&#x6CD5;&#x7684;&#x4F5C;&#x7528;&#x4E5F;&#x662F;&#x6307;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E09;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;resolve&#x65F6;&#x8C03;&#x7528;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x76F8;&#x5F53;&#x4E8E;done&#x65B9;&#x6CD5;&#xFF09;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;reject&#x65F6;&#x8C03;&#x7528;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;&#x76F8;&#x5F53;&#x4E8E;fail&#x65B9;&#x6CD5;&#xFF09;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x662F;progress()&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+deferred.then( doneFilter [, failFilter ] [, progressFilter ] )
+</code></pre>
+<p><strong>&#xFF08;2&#xFF09;&#x8FD4;&#x56DE;&#x503C;</strong></p>
+<p>&#x5728;jQuery 1.8&#x4E4B;&#x524D;&#xFF0C;then()&#x53EA;&#x662F;.done().fail()&#x5199;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#x3002;&#x5728;jQuery 1.8&#x4E4B;&#x540E;&#xFF0C;then()&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;promise&#x5BF9;&#x8C61;&#xFF0C;&#x800C;done()&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x539F;&#x6709;&#x7684;deferred&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;then()&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x8BE5;&#x8FD4;&#x56DE;&#x503C;&#x4F1A;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x5165;&#x540E;&#x9762;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> defer = jQuery.Deferred();
+
+defer.done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(a,b)</span></span>{
+            <span class="hljs-keyword">return</span> a * b;
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( result )</span> </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;result = &quot;</span> + result);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( a, b )</span> </span>{
+            <span class="hljs-keyword">return</span> a * b;
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( result )</span> </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;result = &quot;</span> + result);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( a, b )</span> </span>{
+            <span class="hljs-keyword">return</span> a * b;
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( result )</span> </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;result = &quot;</span> + result);
+});
+
+defer.resolve( <span class="hljs-number">2</span>, <span class="hljs-number">3</span> );
+</code></pre>
+<p>&#x5728;jQuery 1.8&#x7248;&#x672C;&#x4E4B;&#x524D;&#xFF0C;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-javascript">
+result = <span class="hljs-number">2</span> 
+result = <span class="hljs-number">2</span> 
+result = <span class="hljs-number">2</span>
+</code></pre>
+<p>&#x5728;jQuery 1.8&#x7248;&#x672C;&#x4E4B;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;</p>
+<pre><code class="lang-javascript">
+result = <span class="hljs-number">2</span> 
+result = <span class="hljs-number">6</span> 
+result = <span class="hljs-literal">NaN</span>
+</code></pre>
+<p>&#x8FD9;&#x4E00;&#x70B9;&#x9700;&#x8981;&#x7279;&#x522B;&#x5F15;&#x8D77;&#x6CE8;&#x610F;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.ajax( url1, { dataType: <span class="hljs-string">&quot;json&quot;</span> } )
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( data )</span> </span>{
+    <span class="hljs-keyword">return</span> $.ajax( url2, { data: { user: data.userId } } );
+}).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">( data )</span> </span>{
+  <span class="hljs-comment">// &#x4ECE;url2&#x83B7;&#x53D6;&#x7684;&#x6570;&#x636E;</span>
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x6700;&#x540E;&#x90A3;&#x4E2A;done&#x65B9;&#x6CD5;&#xFF0C;&#x5904;&#x7406;&#x7684;&#x662F;&#x4ECE;url2&#x83B7;&#x53D6;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4ECE;url1&#x83B7;&#x53D6;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p><strong>&#xFF08;3&#xFF09;&#x5BF9;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x4FEE;&#x6539;</strong></p>
+<p>&#x5229;&#x7528;then()&#x4F1A;&#x4FEE;&#x6539;&#x8FD4;&#x56DE;&#x503C;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x5BF9;&#x524D;&#x4E00;&#x6B65;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> post = $.post(<span class="hljs-string">&quot;/echo/json/&quot;</span>)
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(p)</span></span>{
+        <span class="hljs-keyword">return</span> p.firstName;
+    });
+
+post.done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(r)</span></span>{ <span class="hljs-built_in">console</span>.log(r); });
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5148;&#x4F7F;&#x7528;then()&#x65B9;&#x6CD5;&#xFF0C;&#x4ECE;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x4E2D;&#x53D6;&#x51FA;&#x6240;&#x9700;&#x8981;&#x7684;&#x5B57;&#x6BB5;&#xFF08;firstName&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x540E;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x5C31;&#x53EF;&#x4EE5;&#x53EA;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x4E86;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#xFF0C;Ajax&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;json&#x5B57;&#x7B26;&#x4E32;&#x91CC;&#x9762;&#x6709;&#x4E00;&#x4E2A;error&#x5C5E;&#x6027;&#xFF0C;&#x8868;&#x793A;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x4F20;&#x7EDF;&#x7684;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x662F;&#x901A;&#x8FC7;done()&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002;&#x901A;&#x8FC7;then()&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;deferred&#x5BF9;&#x8C61;&#x8C03;&#x7528;fail()&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> myDeferred = $.post(<span class="hljs-string">&apos;/echo/json/&apos;</span>, {json:<span class="hljs-built_in">JSON</span>.stringify({<span class="hljs-string">&apos;error&apos;</span>:<span class="hljs-literal">true</span>})})
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(response)</span> </span>{
+            <span class="hljs-keyword">if</span> (response.error) {
+                <span class="hljs-keyword">return</span> $.Deferred().reject(response);
+            }
+            <span class="hljs-keyword">return</span> response;
+        },<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> $.Deferred().reject({error:<span class="hljs-literal">true</span>});
+        }
+    );
+
+myDeferred.done(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(response)</span> </span>{
+        $(<span class="hljs-string">&quot;#status&quot;</span>).html(<span class="hljs-string">&quot;Success!&quot;</span>);
+    }).fail(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(response)</span> </span>{
+        $(<span class="hljs-string">&quot;#status&quot;</span>).html(<span class="hljs-string">&quot;An error occurred&quot;</span>);
+    });
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x901A;&#x4FE1;&#x51FA;&#x9519;&#xFF0C;&#x6216;&#x8005;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x90FD;&#x4F1A;&#x8C03;&#x7528;reject&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x72B6;&#x6001;&#x4E3A;rejected&#xFF0C;&#x56E0;&#x6B64;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;fail&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5173;&#x4E8E;error&#x7684;&#x5904;&#x7406;&#xFF0C;jQuery&#x7684;deferred&#x5BF9;&#x8C61;&#x4E0E;&#x5176;&#x4ED6;&#x5B9E;&#x73B0;Promises&#x89C4;&#x8303;&#x7684;&#x51FD;&#x6570;&#x5E93;&#x6709;&#x4E00;&#x4E2A;&#x91CD;&#x5927;&#x4E0D;&#x540C;&#x3002;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;deferred&#x5BF9;&#x8C61;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x975E;Promises&#x5BF9;&#x8C61;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x540E;&#x7EE7;&#x7684;then&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;rejected&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6355;&#x83B7;&#xFF0C;&#x800C;&#x4F1A;&#x4E00;&#x76F4;&#x4F20;&#x64AD;&#x5230;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5C42;&#x9762;&#x3002;&#x4E3A;&#x4E86;&#x4EE3;&#x7801;&#x884C;&#x4E3A;&#x4E0E;Promises&#x89C4;&#x8303;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x5EFA;&#x8BAE;&#x51FA;&#x9519;&#x65F6;&#xFF0C;&#x603B;&#x662F;&#x4F7F;&#x7528;reject&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-javascript">
+d = $.Deferred()  
+d.then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{  
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;err&apos;</span>)
+}).fail(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;fail&apos;</span>)
+})
+d.resolve()
+<span class="hljs-comment">// Error: err</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;then&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x6309;&#x7167;Promises&#x89C4;&#x8303;&#xFF0C;&#x5E94;&#x8BE5;&#x88AB;fail&#x65B9;&#x6CD5;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6355;&#x83B7;&#xFF0C;&#x4F46;&#x662F;jQuery&#x7684;&#x90E8;&#x7F72;&#x662F;&#x4E0A;&#x5347;&#x5230;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5C42;&#x9762;&#x3002;</p>
+<p><strong>&#xFF08;4&#xFF09;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;</strong></p>
+<p>&#x5982;&#x679C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x8FD4;&#x56DE;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x5219;then&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5C06;&#x662F;&#x5BF9;&#x5E94;&#x8FD9;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x7684;promise&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> d1 = $.Deferred();
+
+<span class="hljs-keyword">var</span> promise = $.when(<span class="hljs-string">&apos;Hello&apos;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(h)</span></span>{  
+  <span class="hljs-keyword">return</span> $.when(h,d1);
+})
+
+promise.done(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(s1,s2)</span> </span>{
+    <span class="hljs-built_in">console</span>.log(s1);
+    <span class="hljs-built_in">console</span>.log(s2);
+})
+
+d1.resolve(<span class="hljs-string">&apos;World&apos;</span>)
+<span class="hljs-comment">// Hello</span>
+<span class="hljs-comment">// World</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;done&#x65B9;&#x6CD5;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x53EA;&#x80FD;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x4F46;&#x662F;&#x7531;&#x4E8E;then&#x65B9;&#x6CD5;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;when&#x65B9;&#x6CD5;&#x751F;&#x6210;&#x7684;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x5BFC;&#x81F4;&#x5B83;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<h3 id="pipe%E6%96%B9%E6%B3%95">pipe&#x65B9;&#x6CD5;</h3>
+<p>pipe&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x5728;&#x8C03;&#x7528;then&#x65B9;&#x6CD5;&#x3001;done&#x65B9;&#x6CD5;&#x3001;fail&#x65B9;&#x6CD5;&#x3001;always&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x8FD0;&#x884C;pipe&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x5B83;&#x901A;&#x5E38;&#x7528;&#x6765;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x505A;&#x521D;&#x6B65;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="%E4%B8%8Epromise-a-%E8%A7%84%E6%A0%BC%E7%9A%84%E5%B7%AE%E5%BC%82">&#x4E0E;Promise A+&#x89C4;&#x683C;&#x7684;&#x5DEE;&#x5F02;</h3>
+<p>Promise&#x4E8B;&#x5B9E;&#x4E0A;&#x7684;&#x6807;&#x51C6;&#x662F;&#x793E;&#x533A;&#x63D0;&#x51FA;&#x7684;Promise A+&#x89C4;&#x683C;&#xFF0C;jQuery&#x7684;&#x5B9E;&#x73B0;&#x5E76;&#x4E0D;&#x5B8C;&#x5168;&#x7B26;&#x5408;Promise A+&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x5BF9;&#x9519;&#x8BEF;&#x7684;&#x5904;&#x7406;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> promise2 = promise1.then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&quot;boom!&quot;</span>);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5728;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E2D;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;Promise A+&#x89C4;&#x5B9A;&#x6B64;&#x65F6;Promise&#x5B9E;&#x4F8B;&#x7684;&#x72B6;&#x6001;&#x53D8;&#x4E3A;reject&#xFF0C;&#x8BE5;&#x9519;&#x8BEF;&#x88AB;&#x4E0B;&#x4E00;&#x4E2A;catch&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6355;&#x83B7;&#x3002;&#x4F46;&#x662F;&#xFF0C;jQuery&#x7684;Deferred&#x5BF9;&#x8C61;&#x6B64;&#x65F6;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x72B6;&#x6001;&#xFF0C;&#x4EA6;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x9519;&#x8BEF;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x88AB;window.onerror&#x6355;&#x83B7;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x5728;Deferred&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x603B;&#x662F;&#x5FC5;&#x987B;&#x4F7F;&#x7528;reject&#x65B9;&#x6CD5;&#x6765;&#x6539;&#x53D8;&#x72B6;&#x6001;&#x3002;</p>
+<h2 id="promise%E5%AF%B9%E8%B1%A1">promise&#x5BF9;&#x8C61;</h2>
+<p><strong>&#xFF08;1&#xFF09;&#x6982;&#x5FF5;</strong></p>
+<p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4ECE;&#x5916;&#x90E8;&#x6539;&#x53D8;&#x7B2C;&#x4E09;&#x65B9;&#x5B8C;&#x6210;&#x7684;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x5982;Ajax&#xFF09;&#x7684;&#x72B6;&#x6001;&#x662F;&#x6BEB;&#x65E0;&#x610F;&#x4E49;&#x7684;&#x3002;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x7528;&#x6237;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;deferred&#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;&#x5B83;&#x7684;promise&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x7B80;&#x5355;&#x8BF4;&#xFF0C;promise&#x5BF9;&#x8C61;&#x5C31;&#x662F;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x72B6;&#x6001;&#x7684;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;deferred&#x7684;&#x53EA;&#x8BFB;&#x7248;&#x3002;&#x6216;&#x8005;&#x66F4;&#x901A;&#x4FD7;&#x5730;&#x7406;&#x89E3;&#x6210;&#xFF0C;promise&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x5C06;&#x8981;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x7684;&#x627F;&#x8BFA;&#xFF0C;&#x6392;&#x9664;&#x4E86;&#x5176;&#x4ED6;&#x4EBA;&#x7834;&#x574F;&#x8FD9;&#x4E2A;&#x627F;&#x8BFA;&#x7684;&#x53EF;&#x80FD;&#x6027;&#xFF0C;&#x53EA;&#x80FD;&#x7B49;&#x5F85;&#x627F;&#x8BFA;&#x65B9;&#x7ED9;&#x51FA;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;promise&#x5BF9;&#x8C61;&#xFF0C;&#x4E3A;&#x539F;&#x59CB;&#x7684;deferred&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x67E5;&#x8BE2;&#x5B83;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x662F;&#x65E0;&#x6CD5;&#x6539;&#x53D8;&#x5B83;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;promise&#x5BF9;&#x8C61;&#x4E0D;&#x5141;&#x8BB8;&#x4F60;&#x8C03;&#x7528;resolve&#x548C;reject&#x65B9;&#x6CD5;&#x3002;</p>
+<p><strong>&#xFF08;2&#xFF09;&#x751F;&#x6210;promise&#x5BF9;&#x8C61;</strong></p>
+<p>deferred&#x5BF9;&#x8C61;&#x7684;promise&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x6765;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;promise&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPromise</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">return</span> $.Deferred().promise();
+}
+
+<span class="hljs-keyword">try</span>{
+    getPromise().resolve(<span class="hljs-string">&quot;a&quot;</span>);
+} <span class="hljs-keyword">catch</span>(err) {
+    <span class="hljs-built_in">console</span>.log(err);
+}
+<span class="hljs-comment">// TypeError</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5BF9;promise&#x5BF9;&#x8C61;&#xFF0C;&#x8C03;&#x7528;resolve&#x65B9;&#x6CD5;&#xFF0C;&#x7ED3;&#x679C;&#x62A5;&#x9519;&#x3002;</p>
+<p>jQuery&#x7684;ajax() &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;promise&#x5BF9;&#x8C61;&#x3002;&#x6B64;&#x5916;&#xFF0C;Animation&#x7C7B;&#x64CD;&#x4F5C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;promise&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript">
+$(<span class="hljs-string">&apos;body&apos;</span>).toggle(<span class="hljs-string">&apos;blinds&apos;</span>).promise().then(
+  <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    $(<span class="hljs-string">&apos;body&apos;</span>).toggle(<span class="hljs-string">&apos;blinds&apos;</span>)
+  }
+)
+</code></pre>
+<h2 id="%E8%BE%85%E5%8A%A9%E6%96%B9%E6%B3%95">&#x8F85;&#x52A9;&#x65B9;&#x6CD5;</h2>
+<p>deferred&#x5BF9;&#x8C61;&#x8FD8;&#x6709;&#x4E00;&#x7CFB;&#x5217;&#x8F85;&#x52A9;&#x65B9;&#x6CD5;&#xFF0C;&#x4F7F;&#x5B83;&#x66F4;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="-when-%E6%96%B9%E6%B3%95">$.when()&#x65B9;&#x6CD5;</h3>
+<p>$.when()&#x63A5;&#x53D7;&#x591A;&#x4E2A;deferred&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5F53;&#x5B83;&#x4EEC;&#x5168;&#x90E8;&#x8FD0;&#x884C;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x624D;&#x8C03;&#x7528;resolved&#x72B6;&#x6001;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x53EA;&#x8981;&#x5176;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x5931;&#x8D25;&#xFF0C;&#x5C31;&#x8C03;&#x7528;rejected&#x72B6;&#x6001;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x5B83;&#x76F8;&#x5F53;&#x4E8E;&#x5C06;&#x591A;&#x4E2A;&#x975E;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x3002;&#x5B9E;&#x8D28;&#x4E0A;&#xFF0C;when&#x65B9;&#x6CD5;&#x4E3A;&#x591A;&#x4E2A;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;promise&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.when(
+    $.ajax( <span class="hljs-string">&quot;/main.php&quot;</span> ),
+    $.ajax( <span class="hljs-string">&quot;/modules.php&quot;</span> ),
+    $.ajax( <span class="hljs-string">&quot;/lists.php&quot;</span> )
+).then(successFunc, failureFunc);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8868;&#x793A;&#xFF0C;&#x8981;&#x7B49;&#x5230;&#x4E09;&#x4E2A;ajax&#x64CD;&#x4F5C;&#x90FD;&#x7ED3;&#x675F;&#x4EE5;&#x540E;&#xFF0C;&#x624D;&#x6267;&#x884C;then&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>when&#x65B9;&#x6CD5;&#x91CC;&#x9762;&#x8981;&#x6267;&#x884C;&#x591A;&#x5C11;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5C31;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5BF9;&#x5E94;&#x524D;&#x9762;&#x6BCF;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.when(
+    $.ajax( <span class="hljs-string">&quot;/main.php&quot;</span> ),
+    $.ajax( <span class="hljs-string">&quot;/modules.php&quot;</span> ),
+    $.ajax( <span class="hljs-string">&quot;/lists.php&quot;</span> )
+).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(resp1, resp2, resp3)</span></span>{
+    <span class="hljs-built_in">console</span>.log(resp1);
+    <span class="hljs-built_in">console</span>.log(resp2);
+    <span class="hljs-built_in">console</span>.log(resp3);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6709;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;resp1&#x3001;resp2&#x548C;resp3&#xFF0C;&#x4F9D;&#x6B21;&#x5BF9;&#x5E94;&#x524D;&#x9762;&#x4E09;&#x4E2A;ajax&#x64CD;&#x4F5C;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x5982;&#x679C;when&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x4E0D;&#x662F;deferred&#x6216;promise&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+d = $.Deferred()  
+$.when(d, <span class="hljs-string">&apos;World&apos;</span>).done(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(s1, s2)</span></span>{
+    <span class="hljs-built_in">console</span>.log(s1);
+    <span class="hljs-built_in">console</span>.log(s2);
+})
+
+d.resolve(<span class="hljs-string">&apos;Hello&apos;</span>) 
+<span class="hljs-comment">// Hello </span>
+<span class="hljs-comment">// World</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;when&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;when&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x90FD;&#x4E0D;&#x662F;deferred&#x6216;promise&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;when&#x65B9;&#x6CD5;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5C06;&#x7ACB;&#x5373;&#x8FD0;&#x884C;&#x3002;</p>
+<h2 id="%E4%BD%BF%E7%94%A8%E5%AE%9E%E4%BE%8B">&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;</h2>
+<h3 id="wait%E6%96%B9%E6%B3%95">wait&#x65B9;&#x6CD5;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;deferred&#x5BF9;&#x8C61;&#x5199;&#x4E00;&#x4E2A;wait&#x65B9;&#x6CD5;&#xFF0C;&#x8868;&#x793A;&#x7B49;&#x5F85;&#x591A;&#x5C11;&#x6BEB;&#x79D2;&#x540E;&#x518D;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.wait = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(time)</span> </span>{
+  <span class="hljs-keyword">return</span> $.Deferred(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(dfd)</span> </span>{
+    setTimeout(dfd.resolve, time);
+  });
+}
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-javascript">
+$.wait(<span class="hljs-number">5000</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello from the future!&quot;</span>);
+});
+</code></pre>
+<h3 id="%E6%94%B9%E5%86%99settimeout">&#x6539;&#x5199;setTimeout</h3>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;wait&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x6539;&#x5199;setTimeout&#x65B9;&#x6CD5;&#xFF0C;&#x8BA9;&#x5176;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;deferred&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doSomethingLater</span><span class="hljs-params">(fn, time)</span> </span>{
+  <span class="hljs-keyword">var</span> dfd = $.Deferred();
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    dfd.resolve(fn());
+  }, time || <span class="hljs-number">0</span>);
+  <span class="hljs-keyword">return</span> dfd.promise();
+}
+
+<span class="hljs-keyword">var</span> promise = doSomethingLater(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span></span>{
+  <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&apos;&#x5DF2;&#x7ECF;&#x5EF6;&#x8FDF;&#x6267;&#x884C;&apos;</span> );
+}, <span class="hljs-number">100</span>);
+</code></pre>
+<h3 id="%E8%87%AA%E5%AE%9A%E4%B9%89%E6%93%8D%E4%BD%9C%E4%BD%BF%E7%94%A8deferred%E6%8E%A5%E5%8F%A3">&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x4F7F;&#x7528;deferred&#x63A5;&#x53E3;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;deferred&#x63A5;&#x53E3;&#xFF0C;&#x4F7F;&#x5F97;&#x4EFB;&#x610F;&#x64CD;&#x4F5C;&#x90FD;&#x53EF;&#x4EE5;&#x7528;done()&#x548C;fail()&#x6307;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+Twitter = {
+  search:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(query)</span> </span>{
+    <span class="hljs-keyword">var</span> dfd = $.Deferred();
+    $.ajax({
+     url:<span class="hljs-string">&quot;http://search.twitter.com/search.json&quot;</span>,
+     data:{q:query},
+     dataType:<span class="hljs-string">&apos;jsonp&apos;</span>,
+     success:dfd.resolve
+    });
+    <span class="hljs-keyword">return</span> dfd.promise();
+  }
+}
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-javascript">
+Twitter.search(<span class="hljs-string">&apos;javaScript&apos;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+  alert(data.results[<span class="hljs-number">0</span>].text);
+});
+</code></pre>
+<p>deferred&#x5BF9;&#x8C61;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4F18;&#x52BF;&#x662F;&#x53EF;&#x4EE5;&#x9644;&#x52A0;&#x591A;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4F7F;&#x7528;&#x4E86;&#x4E0A;&#x9762;&#x6240;&#x6539;&#x5199;&#x7684;setTimeout&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doSomething</span><span class="hljs-params">(arg)</span> </span>{
+  <span class="hljs-keyword">var</span> dfd = $.Deferred();
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    dfd.reject(<span class="hljs-string">&quot;Sorry, something went wrong.&quot;</span>);
+  });
+  <span class="hljs-keyword">return</span> dfd;
+}
+
+doSomething(<span class="hljs-string">&quot;uh oh&quot;</span>).done(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Won&apos;t happen, we&apos;re erroring here!&quot;</span>);
+}).fail(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(message)</span> </span>{
+  <span class="hljs-built_in">console</span>.log(message);
+});
+</code></pre>
+<h2 id="%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
+<ul>
+<li>Matt Baker, <a href="http://eng.wealthfront.com/2012/12/jquerydeferred-is-most-important-client.html" target="_blank">jQuery.Deferred is the most important client-side tool you have</a></li>
+<li><a href="http://www.intridea.com/blog/2011/2/8/fun-with-jquery-deferred" target="_blank">Fun With jQuery Deferred</a></li>
+<li>Bryan Klimt, <a href="http://blog.parse.com/2013/01/29/whats-so-great-about-javascript-promises/" target="_blank">What&#x2019;s so great about JavaScript Promises?</a></li>
+<li>Jos&#xE9; F. Romaniello, <a href="http://joseoncode.com/2011/09/26/a-walkthrough-jquery-deferred-and-promise/" target="_blank">Understanding JQuery.Deferred and Promise</a></li>
+<li>Julian Aubourg, Addy Osmani, <a href="http://msdn.microsoft.com/en-us/magazine/gg723713.aspx" target="_blank">Creating Responsive Applications Using jQuery Deferred and Promises</a></li>
+<li>Graham Jenson, <a href="http://maori.geek.nz/post/i_promise_this_will_be_short" target="_blank">JQuery Promises and Deferreds: I promise this will be short</a></li>
+<li>Q module document, <a href="https://github.com/kriskowal/q/wiki/Coming-from-jQuery" target="_blank">Coming from jQuery</a> </li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../jquery/plugin.html" class="navigation navigation-prev " aria-label="Previous page: 插件开发"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../jquery/jquery-free.html" class="navigation navigation-next " aria-label="Next page: 如何做到jQuery-free？"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

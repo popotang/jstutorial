@@ -1,10 +1,4 @@
----
-title: Canvas API
-layout: page
-date: 2012-11-21
-category: htmlapi
-modifiedOn: 2013-06-10
----
+
 
 ## 概述
 
@@ -12,19 +6,19 @@ Canvas API（画布）用于在网页实时生成图像，并且可以操作图�
 
 使用前，首先需要新建一个canvas网页元素。
 
-{% highlight html %}
+``` html
 
 <canvas id="myCanvas" width="400" height="200">
 	您的浏览器不支持canvas！
 </canvas>
 
-{% endhighlight %}
+```
 
 上面代码中，如果浏览器不支持这个API，则就会显示canvas标签中间的文字——“您的浏览器不支持canvas！”。
 
 每个canvas元素都有一个对应的context对象（上下文对象），Canvas API定义在这个context对象上面，所以需要获取这个对象，方法是使用getContext方法。
 
-{% highlight javascript %}
+``` javascript
 
 var canvas = document.getElementById('myCanvas');
 
@@ -32,7 +26,7 @@ if (canvas.getContext) {
 	var ctx = canvas.getContext('2d');
 }
 
-{% endhighlight %}
+```
 
 上面代码中，getContext方法指定参数2d，表示该canvas对象用于生成2D图案（即平面图案）。如果参数是3d，就表示用于生成3D图像（即立体图案），这部分实际上单独叫做WebGL API（本书不涉及）。
 
@@ -44,7 +38,7 @@ canvas画布提供了一个用来作图的平面空间，该空间的每个点�
 
 beginPath方法表示开始绘制路径，moveTo(x, y)方法设置线段的起点，lineTo(x, y)方法设置线段的终点，stroke方法用来给透明的线段着色。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.beginPath(); // 开始路径绘制
 ctx.moveTo(20, 20); // 设置路径起点，坐标为(20,20)
@@ -53,7 +47,7 @@ ctx.lineWidth = 1.0; // 设置线宽
 ctx.strokeStyle = "#CC0000"; // 设置线的颜色
 ctx.stroke(); // 进行线的着色，这时整条线才变得可见
 
-{% endhighlight %}
+```
 
 moveto和lineto方法可以多次使用。最后，还可以使用closePath方法，自动绘制一条当前点到起点的直线，形成一个封闭图形，省却使用一次lineto方法。
 
@@ -61,34 +55,34 @@ moveto和lineto方法可以多次使用。最后，还可以使用closePath方�
 
 fillRect(x, y, width, height)方法用来绘制矩形，它的四个参数分别为矩形左上角顶点的x坐标、y坐标，以及矩形的宽和高。fillStyle属性用来设置矩形的填充色。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.fillStyle = 'yellow';
 ctx.fillRect(50, 50, 200, 100); 
 
-{% endhighlight %}
+```
 
 strokeRect方法与fillRect类似，用来绘制空心矩形。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.strokeRect(10,10,200,100); 
 
-{% endhighlight %}
+```
 
 clearRect方法用来清除某个矩形区域的内容。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.clearRect(100,50,50,50);  
 
-{% endhighlight %}
+```
 
 **（3）绘制文本**
 
 fillText(string, x, y) 用来绘制文本，它的三个参数分别为文本内容、起点的x坐标、y坐标。使用之前，需用font设置字体、大小、样式（写法类似与CSS的font属性）。与此类似的还有strokeText方法，用来添加空心字。
 
-{% highlight javascript %}
+``` javascript
 
 // 设置字体
 ctx.font = "Bold 20px Arial"; 
@@ -101,7 +95,7 @@ ctx.fillText("Hello!", 10, 50);
 // 绘制空心字
 ctx.strokeText("Hello!", 10, 100); 
 
-{% endhighlight %}
+```
 
 fillText方法不支持文本断行，即所有文本出现在一行内。所以，如果要生成多行文本，只有调用多次fillText方法。
 
@@ -109,28 +103,28 @@ fillText方法不支持文本断行，即所有文本出现在一行内。所以
 
 arc方法用来绘制扇形。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise);
 
-{% endhighlight %}
+```
 
 arc方法的x和y参数是圆心坐标，radius是半径，startAngle和endAngle则是扇形的起始角度和终止角度（以弧度表示），anticlockwise表示做图时应该逆时针画（true）还是顺时针画（false）。
 
 下面是如何绘制实心的圆形。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.beginPath(); 
 ctx.arc(60, 60, 50, 0, Math.PI*2, true); 
 ctx.fillStyle = "#000000"; 
 ctx.fill();
 
-{% endhighlight %}
+```
 
 绘制空心圆形的例子。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.beginPath(); 
 ctx.arc(60, 60, 50, 0, Math.PI*2, true); 
@@ -138,13 +132,13 @@ ctx.lineWidth = 1.0;
 ctx.strokeStyle = "#000"; 
 ctx.stroke();
 
-{% endhighlight %}
+```
 
 **（5）设置渐变色**
 
 createLinearGradient方法用来设置渐变色。
 
-{% highlight javascript %}
+``` javascript
 
 var myGradient = ctx.createLinearGradient(0, 0, 0, 160); 
 
@@ -152,24 +146,24 @@ myGradient.addColorStop(0, "#BABABA");
 
 myGradient.addColorStop(1, "#636363");
 
-{% endhighlight %}
+```
 
 createLinearGradient方法的参数是(x1, y1, x2, y2)，其中x1和y1是起点坐标，x2和y2是终点坐标。通过不同的坐标值，可以生成从上至下、从左到右的渐变等等。
 
 使用方法如下：
 
-{% highlight javascript %}
+``` javascript
 
 ctx.fillStyle = myGradient;
 ctx.fillRect(10,10,200,100);
 
-{% endhighlight %}
+```
 
 **（6）设置阴影**
 
 一系列与阴影相关的方法，可以用来设置阴影。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.shadowOffsetX = 10; // 设置水平位移
 ctx.shadowOffsetY = 10; // 设置垂直位移
@@ -179,7 +173,7 @@ ctx.shadowColor = "rgba(0,0,0,0.5)"; // 设置阴影颜色
 ctx.fillStyle = "#CC0000"; 
 ctx.fillRect(10,10,200,100);
 
-{% endhighlight %}
+```
 
 ## 图像处理方法
 
@@ -187,19 +181,19 @@ ctx.fillRect(10,10,200,100);
 
 canvas允许将图像文件插入画布，做法是读取图片后，使用drawImage方法在画布内进行重绘。
 
-{% highlight javascript %}
+``` javascript
 
 var img = new Image();
 img.src = "image.png";
 ctx.drawImage(img, 0, 0); // 设置对应的图像对象，以及它在画布上的位置
 
-{% endhighlight %}
+```
 
 上面代码将一个PNG图像载入canvas。
 
 由于图像的载入需要时间，drawImage方法只能在图像完全载入后才能调用，因此上面的代码需要改写。
 
-{% highlight javascript %}
+``` javascript
 
 var image = new Image(); 
 
@@ -214,7 +208,7 @@ image.onload = function() {
 
 image.src = "image.png";
 
-{% endhighlight %}
+```
 
 drawImage()方法接受三个参数，第一个参数是图像文件的DOM元素（即img标签），第二个和第三个参数是图像左上角在Canvas元素中的坐标，上例中的（0, 0）就表示将图像左上角放置在Canvas元素的左上角。
 
@@ -222,25 +216,25 @@ drawImage()方法接受三个参数，第一个参数是图像文件的DOM元素
 
 getImageData方法可以用来读取Canvas的内容，返回一个对象，包含了每个像素的信息。
 
-{% highlight javascript %}
+``` javascript
 
 var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
 
-{% endhighlight %}
+```
 
 imageData对象有一个data属性，它的值是一个一维数组。该数组的值，依次是每个像素的红、绿、蓝、alpha通道值，因此该数组的长度等于 图像的像素宽度 x 图像的像素高度 x 4，每个值的范围是0–255。这个数组不仅可读，而且可写，因此通过操作这个数组的值，就可以达到操作图像的目的。修改这个数组以后，使用putImageData方法将数组内容重新绘制在Canvas上。
 
-{% highlight javascript %}
+``` javascript
 
 context.putImageData(imageData, 0, 0);
 
-{% endhighlight %}
+```
 
 ### toDataURL方法
 
 对图像数据做出修改以后，可以使用toDataURL方法，将Canvas数据重新转化成一般的图像文件形式。
 
-{% highlight javascript %}
+``` javascript
 
 function convertCanvasToImage(canvas) {
   var image = new Image();
@@ -248,7 +242,7 @@ function convertCanvasToImage(canvas) {
   return image;
 }
 
-{% endhighlight %}
+```
 
 上面的代码将Canvas数据，转化成PNG data URI。
 
@@ -256,7 +250,7 @@ function convertCanvasToImage(canvas) {
 
 save方法用于保存上下文环境，restore方法用于恢复到上一次保存的上下文环境。
 
-{% highlight javascript %}
+``` javascript
 
 ctx.save(); 
 
@@ -273,7 +267,7 @@ ctx.restore();
 ctx.fillStyle = "#000000";
 ctx.fillRect(180,10,150,100); 
 
-{% endhighlight %}
+```
 
 上面代码先用save方法，保存了当前设置，然后绘制了一个有阴影的矩形。接着，使用restore方法，恢复了保存前的设置，绘制了一个没有阴影的矩形。
 
@@ -358,7 +352,7 @@ setInterval(function() {
 
 假定filter是一个处理像素的函数，那么整个对Canvas的处理流程，可以用下面的代码表示。
 
-{% highlight javascript %}
+``` javascript
 
 if (canvas.width > 0 && canvas.height > 0) {
 
@@ -370,7 +364,7 @@ if (canvas.width > 0 && canvas.height > 0) {
 
 }
 
-{% endhighlight %}
+```
 
 以下是几种常见的处理方法。
 
@@ -378,7 +372,7 @@ if (canvas.width > 0 && canvas.height > 0) {
 
 灰度图（grayscale）就是取红、绿、蓝三个像素值的算术平均值，这实际上将图像转成了黑白形式。假定d[i]是像素数组中一个象素的红色值，则d[i+1]为绿色值，d[i+2]为蓝色值，d[i+3]就是alpha通道值。转成灰度的算法，就是将红、绿、蓝三个值相加后除以3，再将结果写回数组。
 
-{% highlight javascript %}
+``` javascript
 
 grayscale = function (pixels) {
 
@@ -395,13 +389,13 @@ grayscale = function (pixels) {
 
 };
 
-{% endhighlight %}
+```
 
 ### 复古效果
 
 复古效果（sepia）则是将红、绿、蓝三个像素，分别取这三个值的某种加权平均值，使得图像有一种古旧的效果。
 
-{% highlight javascript %}
+``` javascript
 
 sepia = function (pixels) {
 
@@ -420,13 +414,13 @@ sepia = function (pixels) {
 
 };
 
-{% endhighlight %}
+```
 
 ### 红色蒙版效果
 
 红色蒙版指的是，让图像呈现一种偏红的效果。算法是将红色通道设为红、绿、蓝三个值的平均值，而将绿色通道和蓝色通道都设为0。
 
-{% highlight javascript %}
+``` javascript
 
 red = function (pixels) {
 	
@@ -444,13 +438,13 @@ red = function (pixels) {
 
 };
 
-{% endhighlight %}
+```
 
 ### 亮度效果
 
 亮度效果（brightness）是指让图像变得更亮或更暗。算法将红色通道、绿色通道、蓝色通道，同时加上一个正值或负值。
 
-{% highlight javascript %}
+``` javascript
 
 brightness = function (pixels, delta) {
 
@@ -466,13 +460,13 @@ brightness = function (pixels, delta) {
 
 };
 
-{% endhighlight %}
+```
 
 ### 反转效果
 
 反转效果（invert）是指图片呈现一种色彩颠倒的效果。算法为红、绿、蓝通道都取各自的相反值（255-原值）。
 
-{% highlight javascript %}
+``` javascript
 
 invert = function (pixels) {
 
@@ -488,7 +482,7 @@ invert = function (pixels) {
 
 };
 
-{% endhighlight %}
+```
 
 ## 参考链接
 

@@ -1,10 +1,4 @@
----
-title: 为什么学习JavaScript？
-layout: page
-category: introduction
-date: 2012-12-29
-modifiedOn: 2014-01-09
----
+
 
 每当我开始阅读一本很厚的书，总是先问自己，它值得我这样做吗？
 

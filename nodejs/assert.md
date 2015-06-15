@@ -1,10 +1,4 @@
----
-title: assert 模块
-layout: page
-category: nodejs
-data: 2015-06-06
-modifiedOn: 2015-06-06
----
+
 
 assert模块是Node的内置模块，主要用于断言。如果表达式不符合预期，就抛出一个错误。该模块提供11个方法，但只有少数几个是常用的。
 

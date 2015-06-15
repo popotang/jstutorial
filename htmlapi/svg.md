@@ -1,10 +1,4 @@
----
-title: SVG 图像
-layout: page
-category: htmlapi
-date: 2013-02-08
-modifiedOn: 2013-11-27
----
+
 
 SVG是“可缩放矢量图”（Scalable Vector Graphics）的缩写，是一种描述向量图形的XML格式的标记化语言。也就是说，SVG本质上是文本文件，格式采用XML，可以在浏览器中显示出矢量图像。由于结构是XML格式，使得它可以插入HTML文档，成为DOM的一部分，然后用JavaScript和CSS进行操作。
 
@@ -16,20 +10,20 @@ SVG图像可以用Adobe公司的Illustrator软件、开源软件Inkscape等生�
 
 SVG插入网页的方法有多种，可以用在img、object、embed、iframe等标签，以及CSS的background-image属性。
 
-{% highlight html %}
+``` html
 
 <img src="circle.svg">
 <object id="object" data="circle.svg" type="image/svg+xml"></object>
 <embed id="embed" src="icon.svg" type="image/svg+xml">
 <iframe id="iframe" src="icon.svg"></iframe>
 
-{% endhighlight %}
+```
 
 上面是四种在网页中插入SVG图像的方式。
 
 此外，SVG文件还可以插入其他DOM元素，比如div元素，请看下面的例子（使用了jQuery函数库）。
 
-{% highlight html %}
+``` html
 
 <div id="stage"></div>
 
@@ -42,7 +36,7 @@ $("#stage").load('icon.svg',function(response){
 });
 </script>
 
-{% endhighlight %}
+```
 
 ## svg格式
 
@@ -112,17 +106,17 @@ g标签用于将多个形状组成一组，表示group。
 
 如果使用img标签插入SVG文件，则无法获取SVG DOM。使用object、iframe、embed标签，可以获取SVG DOM。
 
-{% highlight javascript %}
+``` javascript
 
 var svgObject = document.getElementById("object").contentDocument;
 var svgIframe = document.getElementById("iframe").contentDocument;
 var svgEmbed = document.getElementById("embed").getSVGDocument(); 
 
-{% endhighlight %}
+```
 
 由于svg文件就是一般的XML文件，因此可以用DOM方法，选取页面元素。
 
-{% highlight javascript %}
+``` javascript
 
 // 改变填充色
 document.getElementById("theCircle").style.fill = "red";
@@ -135,7 +129,7 @@ document.getElementById("theCircle").addEventListener("click", function() {
    console.log("clicked")
 });
 
-{% endhighlight %}
+```
 
 ### 读取svg源码
 
@@ -143,7 +137,7 @@ document.getElementById("theCircle").addEventListener("click", function() {
 
 假定网页中有一个svg元素。
 
-{% highlight html %}
+``` html
 
 <div id="svg-container">
 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="500" height="440">
@@ -151,15 +145,15 @@ document.getElementById("theCircle").addEventListener("click", function() {
 	</svg>
 </div>
 
-{% endhighlight %}
+```
 
 使用XMLSerializer实例的serializeToString方法，获取svg元素的代码。
 
-{% highlight javascript %}
+``` javascript
 
 var svgString = new XMLSerializer().serializeToString(document.querySelector('svg'));
 
-{% endhighlight %}
+```
 
 ### 将svg图像转为canvas图像
 
@@ -179,7 +173,7 @@ img.src = url;
 
 然后，当图像加载完成后，再将它绘制到canvas元素。
 
-{% highlight javascript %}
+``` javascript
 
 img.onload = function() {
 	var canvas = document.getElementById("canvas");
@@ -187,7 +181,7 @@ img.onload = function() {
     ctx.drawImage(img, 0, 0);
 };
 
-{% endhighlight %}
+```
 
 ## 实例
 

@@ -1,10 +1,4 @@
----
-title: JavaScript 程序测试
-category: tool
-layout: page
-date: 2015-06-08
-modifiedOn: 2015-06-08
----
+
 
 ## 为什么要写测试？
 

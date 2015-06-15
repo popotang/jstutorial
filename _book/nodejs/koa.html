@@ -1,0 +1,2424 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Koa框架 | 说明</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="prev" href="../nodejs/express.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="13.31" data-basepath=".." data-revision="Mon Jun 15 2015 13:31:01 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 导论</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2" data-path="introduction/preface.html">
+            
+                
+                    <a href="../introduction/preface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="introduction/why.html">
+            
+                
+                    <a href="../introduction/why.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        为什么学习JavaScript？
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="introduction/history.html">
+            
+                
+                    <a href="../introduction/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        JavaScript的历史
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 基本语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3" data-path="grammar/basic.html">
+            
+                
+                    <a href="../grammar/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="grammar/number.html">
+            
+                
+                    <a href="../grammar/number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        数值
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="grammar/string.html">
+            
+                
+                    <a href="../grammar/string.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="grammar/object.html">
+            
+                
+                    <a href="../grammar/object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="grammar/array.html">
+            
+                
+                    <a href="../grammar/array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        数组
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="grammar/function.html">
+            
+                
+                    <a href="../grammar/function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="grammar/operator.html">
+            
+                
+                    <a href="../grammar/operator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        运算符
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="grammar/conversion.html">
+            
+                
+                    <a href="../grammar/conversion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        数据类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="grammar/error.html">
+            
+                
+                    <a href="../grammar/error.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        错误处理机制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="grammar/style.html">
+            
+                
+                    <a href="../grammar/style.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        编程风格
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 标准库</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4" data-path="stdlib/object.html">
+            
+                
+                    <a href="../stdlib/object.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Object对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="stdlib/array.html">
+            
+                
+                    <a href="../stdlib/array.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Array 对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="stdlib/wrapper.html">
+            
+                
+                    <a href="../stdlib/wrapper.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        包装对象和Boolean对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="stdlib/number.html">
+            
+                
+                    <a href="../stdlib/number.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Number对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="stdlib/string.html">
+            
+                
+                    <a href="../stdlib/string.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        String对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="stdlib/math.html">
+            
+                
+                    <a href="../stdlib/math.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Math对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="stdlib/date.html">
+            
+                
+                    <a href="../stdlib/date.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        Date对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="stdlib/regexp.html">
+            
+                
+                    <a href="../stdlib/regexp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        RegExp对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="stdlib/json.html">
+            
+                
+                    <a href="../stdlib/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        JSON对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="stdlib/arraybuffer.html">
+            
+                
+                    <a href="../stdlib/arraybuffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        ArrayBuffer：类型化数组
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 面向对象编程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5" data-path="oop/basic.html">
+            
+                
+                    <a href="../oop/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="oop/encapsulation.html">
+            
+                
+                    <a href="../oop/encapsulation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        封装
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="oop/inheritance.html">
+            
+                
+                    <a href="../oop/inheritance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="oop/module.html">
+            
+                
+                    <a href="../oop/module.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        模块化编程
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> DOM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6" data-path="dom/node.html">
+            
+                
+                    <a href="../dom/node.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Node节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="dom/document.html">
+            
+                
+                    <a href="../dom/document.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Document节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="dom/element.html">
+            
+                
+                    <a href="../dom/element.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Element节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="dom/text.html">
+            
+                
+                    <a href="../dom/text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Text节点和DocumentFragment节点
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="dom/event.html">
+            
+                
+                    <a href="../dom/event.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Event对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="dom/css.html">
+            
+                
+                    <a href="../dom/css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        CSS操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="dom/mutationobserver.html">
+            
+                
+                    <a href="../dom/mutationobserver.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Mutation Observer
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 浏览器对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7" data-path="bom/engine.html">
+            
+                
+                    <a href="../bom/engine.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        浏览器的JavaScript引擎
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="bom/timer.html">
+            
+                
+                    <a href="../bom/timer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        定时器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="bom/window.html">
+            
+                
+                    <a href="../bom/window.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        window对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="bom/history.html">
+            
+                
+                    <a href="../bom/history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        History对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="bom/ajax.html">
+            
+                
+                    <a href="../bom/ajax.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        Ajax
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="bom/windowpostmessage.html">
+            
+                
+                    <a href="../bom/windowpostmessage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        window.postMessage方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="bom/webstorage.html">
+            
+                
+                    <a href="../bom/webstorage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                        Web Storage：浏览器端数据储存机制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="bom/indexeddb.html">
+            
+                
+                    <a href="../bom/indexeddb.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                        IndexedDB：浏览器端数据库
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="bom/notification.html">
+            
+                
+                    <a href="../bom/notification.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.15.</b>
+                        
+                        Web Notification API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="bom/performance.html">
+            
+                
+                    <a href="../bom/performance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.16.</b>
+                        
+                        Performance API
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="bom/mobile.html">
+            
+                
+                    <a href="../bom/mobile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.17.</b>
+                        
+                        移动设备API
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> HTML网页的API</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.8" data-path="htmlapi/elements.html">
+            
+                
+                    <a href="../htmlapi/elements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        HTML网页元素
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="htmlapi/canvas.html">
+            
+                
+                    <a href="../htmlapi/canvas.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        Canvas
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="htmlapi/svg.html">
+            
+                
+                    <a href="../htmlapi/svg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        SVG图像
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="htmlapi/form.html">
+            
+                
+                    <a href="../htmlapi/form.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        表单
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="htmlapi/file.html">
+            
+                
+                    <a href="../htmlapi/file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                        文件与二进制数据的操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="htmlapi/webworker.html">
+            
+                
+                    <a href="../htmlapi/webworker.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                        Web Worker
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="htmlapi/eventsource.html">
+            
+                
+                    <a href="../htmlapi/eventsource.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                        SSE：服务器发送事件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="htmlapi/pagevisibility.html">
+            
+                
+                    <a href="../htmlapi/pagevisibility.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.15.</b>
+                        
+                        Page Visiblity
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="htmlapi/fullscreen.html">
+            
+                
+                    <a href="../htmlapi/fullscreen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.16.</b>
+                        
+                        FullScreen API：全屏操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="htmlapi/webspeech.html">
+            
+                
+                    <a href="../htmlapi/webspeech.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.17.</b>
+                        
+                        Web Speech
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="htmlapi/requestanimationframe.html">
+            
+                
+                    <a href="../htmlapi/requestanimationframe.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.18.</b>
+                        
+                        requestAnimationFrame
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="htmlapi/websocket.html">
+            
+                
+                    <a href="../htmlapi/websocket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.19.</b>
+                        
+                        WebSocket
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="htmlapi/webrtc.html">
+            
+                
+                    <a href="../htmlapi/webrtc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.20.</b>
+                        
+                        WebRTC
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="htmlapi/webcomponents.html">
+            
+                
+                    <a href="../htmlapi/webcomponents.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.21.</b>
+                        
+                        Web Components
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> jQuery</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.9" data-path="jquery/basic.html">
+            
+                
+                    <a href="../jquery/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.9.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="jquery/utility.html">
+            
+                
+                    <a href="../jquery/utility.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.10.</b>
+                        
+                        工具方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="jquery/plugin.html">
+            
+                
+                    <a href="../jquery/plugin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.11.</b>
+                        
+                        插件开发
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="jquery/deferred.html">
+            
+                
+                    <a href="../jquery/deferred.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.12.</b>
+                        
+                        deferred对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="jquery/jquery-free.html">
+            
+                
+                    <a href="../jquery/jquery-free.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.13.</b>
+                        
+                        如何做到jQuery-free？
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> 开发工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.10" data-path="tool/console.html">
+            
+                
+                    <a href="../tool/console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                        console对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.11" data-path="tool/phantomjs.html">
+            
+                
+                    <a href="../tool/phantomjs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                        PhantomJS
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.12" data-path="tool/bower.html">
+            
+                
+                    <a href="../tool/bower.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.12.</b>
+                        
+                        Bower：客户端库管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.13" data-path="tool/grunt.html">
+            
+                
+                    <a href="../tool/grunt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.13.</b>
+                        
+                        Grunt：任务自动管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.14" data-path="tool/gulp.html">
+            
+                
+                    <a href="../tool/gulp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.14.</b>
+                        
+                        Gulp：任务自动管理工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.15" data-path="tool/browserify.html">
+            
+                
+                    <a href="../tool/browserify.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.15.</b>
+                        
+                        Browserify：浏览器加载Node.js模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.16" data-path="tool/requirejs.html">
+            
+                
+                    <a href="../tool/requirejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.16.</b>
+                        
+                        RequireJS和AMD规范
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.17" data-path="tool/sourcemap.html">
+            
+                
+                    <a href="../tool/sourcemap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.17.</b>
+                        
+                        Source map
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.18" data-path="tool/testing.html">
+            
+                
+                    <a href="../tool/testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.18.</b>
+                        
+                        JavaScript 测试
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+            <span><b>10.</b> JavaScript高级语法</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.11" data-path="advanced/asynchronous.html">
+            
+                
+                    <a href="../advanced/asynchronous.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.11.</b>
+                        
+                        异步编程的模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.12" data-path="advanced/fsm.html">
+            
+                
+                    <a href="../advanced/fsm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.12.</b>
+                        
+                        有限状态机
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.13" data-path="advanced/backbonejs.html">
+            
+                
+                    <a href="../advanced/backbonejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.13.</b>
+                        
+                        MVC模式和Backbone.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.14" data-path="advanced/strict.html">
+            
+                
+                    <a href="../advanced/strict.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.14.</b>
+                        
+                        严格模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.15" data-path="advanced/ecmascript6.html">
+            
+                
+                    <a href="../advanced/ecmascript6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.15.</b>
+                        
+                        ECMAScript 6 介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 附录</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.12" data-path="appendix/api.html">
+            
+                
+                    <a href="../appendix/api.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.12.</b>
+                        
+                        JavaScript API列表
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+            <span><b>12.</b> 草稿一：函数库</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.13" data-path="library/underscore.html">
+            
+                
+                    <a href="../library/underscore.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.13.</b>
+                        
+                        Underscore.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="library/modernizr.html">
+            
+                
+                    <a href="../library/modernizr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.14.</b>
+                        
+                        Modernizr
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.15" data-path="library/datejs.html">
+            
+                
+                    <a href="../library/datejs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.15.</b>
+                        
+                        Datejs
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.16" data-path="library/d3.html">
+            
+                
+                    <a href="../library/d3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.16.</b>
+                        
+                        D3.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.17" data-path="library/designpattern.html">
+            
+                
+                    <a href="../library/designpattern.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.17.</b>
+                        
+                        设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.18" data-path="library/sorting.html">
+            
+                
+                    <a href="../library/sorting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.18.</b>
+                        
+                        排序算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" >
+            
+            <span><b>13.</b> 草稿二：Node.js</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.14" data-path="nodejs/basic.html">
+            
+                
+                    <a href="../nodejs/basic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.14.</b>
+                        
+                        概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.15" data-path="nodejs/commonjs.html">
+            
+                
+                    <a href="../nodejs/commonjs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.15.</b>
+                        
+                        CommonJS规范
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.16" data-path="nodejs/packagejson.html">
+            
+                
+                    <a href="../nodejs/packagejson.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.16.</b>
+                        
+                        package.json文件
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.17" data-path="nodejs/npm.html">
+            
+                
+                    <a href="../nodejs/npm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.17.</b>
+                        
+                        npm模块管理器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.18" data-path="nodejs/fs.html">
+            
+                
+                    <a href="../nodejs/fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.18.</b>
+                        
+                        fs模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.19" data-path="nodejs/path.html">
+            
+                
+                    <a href="../nodejs/path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.19.</b>
+                        
+                        path模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.20" data-path="nodejs/process.html">
+            
+                
+                    <a href="../nodejs/process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.20.</b>
+                        
+                        process对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.21" data-path="nodejs/buffer.html">
+            
+                
+                    <a href="../nodejs/buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.21.</b>
+                        
+                        Buffer对象
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.22" data-path="nodejs/events.html">
+            
+                
+                    <a href="../nodejs/events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.22.</b>
+                        
+                        Events模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.23" data-path="nodejs/stream.html">
+            
+                
+                    <a href="../nodejs/stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.23.</b>
+                        
+                        Stream接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.24" data-path="nodejs/child-process.html">
+            
+                
+                    <a href="../nodejs/child-process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.24.</b>
+                        
+                        Child Process模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.25" data-path="nodejs/http.html">
+            
+                
+                    <a href="../nodejs/http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.25.</b>
+                        
+                        Http模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.26" data-path="nodejs/assert.html">
+            
+                
+                    <a href="../nodejs/assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.26.</b>
+                        
+                        assert模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.27" data-path="nodejs/cluster.html">
+            
+                
+                    <a href="../nodejs/cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.27.</b>
+                        
+                        Cluster模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.28" data-path="nodejs/os.html">
+            
+                
+                    <a href="../nodejs/os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.28.</b>
+                        
+                        OS模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.29" data-path="nodejs/net.html">
+            
+                
+                    <a href="../nodejs/net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.29.</b>
+                        
+                        Net模块和DNS模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.30" data-path="nodejs/express.html">
+            
+                
+                    <a href="../nodejs/express.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.30.</b>
+                        
+                        Express框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="13.31" data-path="nodejs/koa.html">
+            
+                
+                    <a href="../nodejs/koa.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.31.</b>
+                        
+                        Koa框架
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >说明</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>Koa&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E8E;Express&#x7684;Web&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E5F;&#x662F;&#x540C;&#x4E00;&#x7EC4;&#x4EBA;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x4E86;Generator&#x51FD;&#x6570;&#xFF0C;&#x8FDB;&#x884C;&#x4E86;&#x67B6;&#x6784;&#x7684;&#x91CD;&#x65B0;&#x8BBE;&#x8BA1;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;Koa&#x7684;&#x539F;&#x7406;&#x548C;&#x5185;&#x90E8;&#x7ED3;&#x6784;&#x5F88;&#x50CF;Express&#xFF0C;&#x4F46;&#x662F;&#x8BED;&#x6CD5;&#x548C;&#x5185;&#x90E8;&#x7ED3;&#x6784;&#x8FDB;&#x884C;&#x4E86;&#x5347;&#x7EA7;&#x3002;</p>
+<p>&#x5B98;&#x65B9;<a href="https://github.com/koajs/koa/blob/master/docs/faq.md#why-isnt-koa-just-express-40" target="_blank">faq</a>&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;&#x201D;&#x4E3A;&#x4EC0;&#x4E48;koa&#x4E0D;&#x662F;Express 4.0&#xFF1F;&#x201C;&#xFF0C;&#x56DE;&#x7B54;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;&#x201D;Koa&#x4E0E;Express&#x6709;&#x5F88;&#x5927;&#x5DEE;&#x5F02;&#xFF0C;&#x6574;&#x4E2A;&#x8BBE;&#x8BA1;&#x90FD;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x5C06;Express 3.0&#x6309;&#x7167;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x5347;&#x7EA7;&#x5230;4.0&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740;&#x91CD;&#x5199;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x89C9;&#x5F97;&#x521B;&#x9020;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5E93;&#xFF0C;&#x662F;&#x66F4;&#x5408;&#x9002;&#x7684;&#x505A;&#x6CD5;&#x3002;&#x201C;</p>
+<h2 id="koa%E5%BA%94%E7%94%A8">Koa&#x5E94;&#x7528;</h2>
+<p>&#x4E00;&#x4E2A;Koa&#x5E94;&#x7528;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;middleware&#x6570;&#x7EC4;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7531;&#x4E00;&#x7EC4;Generator&#x51FD;&#x6570;&#x7EC4;&#x6210;&#x3002;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5BF9;HTTP&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x52A0;&#x5DE5;&#xFF0C;&#x6BD4;&#x5982;&#x751F;&#x6210;&#x7F13;&#x5B58;&#x3001;&#x6307;&#x5B9A;&#x4EE3;&#x7406;&#x3001;&#x8BF7;&#x6C42;&#x91CD;&#x5B9A;&#x5411;&#x7B49;&#x7B49;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
+<span class="hljs-keyword">var</span> app = koa();
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">()</span></span>{
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;Hello World&apos;</span>;
+});
+
+app.listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;app&#x5C31;&#x662F;&#x4E00;&#x4E2A;Koa&#x5E94;&#x7528;&#x3002;&#x5B83;&#x76D1;&#x542C;3000&#x7AEF;&#x53E3;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5185;&#x5BB9;&#x4E3A;Hello World&#x7684;&#x7F51;&#x9875;&#x3002;</p>
+<p>app.use&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5411;middleware&#x6570;&#x7EC4;&#x6DFB;&#x52A0;Generator&#x51FD;&#x6570;&#x3002;</p>
+<p>listen&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;&#x5E76;&#x542F;&#x52A8;&#x5F53;&#x524D;&#x5E94;&#x7528;&#x3002;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x7B49;&#x540C;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
+<span class="hljs-keyword">var</span> app = koa();
+http.createServer(app.callback()).listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<h2 id="%E4%B8%AD%E9%97%B4%E4%BB%B6">&#x4E2D;&#x95F4;&#x4EF6;</h2>
+<p>Koa&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x5F88;&#x50CF;Express&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x4E5F;&#x662F;&#x5BF9;HTTP&#x8BF7;&#x6C42;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;Generator&#x51FD;&#x6570;&#x3002;&#x800C;&#x4E14;&#xFF0C;Koa&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x662F;&#x4E00;&#x4E2A;&#x7EA7;&#x8054;&#x5F0F;&#xFF08;Cascading&#xFF09;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5C5E;&#x4E8E;&#x662F;&#x5C42;&#x5C42;&#x8C03;&#x7528;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x8C03;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x8C03;&#x7528;&#x7B2C;&#x4E09;&#x4E2A;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;&#x4E0A;&#x6E38;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x5FC5;&#x987B;&#x7B49;&#x5230;&#x4E0B;&#x6E38;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x624D;&#x4F1A;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x70B9;&#x5F88;&#x50CF;&#x9012;&#x5F52;&#x3002;</p>
+<p>&#x4E2D;&#x95F4;&#x4EF6;&#x901A;&#x8FC7;&#x5F53;&#x524D;&#x5E94;&#x7528;&#x7684;use&#x65B9;&#x6CD5;&#x6CE8;&#x518C;&#x3002;</p>
+<pre><code class="lang-javascript">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-params">(next)</span></span>{
+  <span class="hljs-keyword">var</span> start = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>; <span class="hljs-comment">// &#xFF08;1&#xFF09;</span>
+  <span class="hljs-keyword">yield</span> next;  <span class="hljs-comment">// &#xFF08;2&#xFF09;</span>
+  <span class="hljs-keyword">var</span> ms = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span> - start; <span class="hljs-comment">// &#xFF08;3&#xFF09;</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;%s %s - %s&apos;</span>, <span class="hljs-keyword">this</span>.method, <span class="hljs-keyword">this</span>.url, ms); <span class="hljs-comment">// &#xFF08;4&#xFF09;</span>
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>app.use</code>&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5C31;&#x662F;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;Generator&#x51FD;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x7279;&#x5F81;&#x5C31;&#x662F;function&#x547D;&#x4EE4;&#x4E0E;&#x53C2;&#x6570;&#x4E4B;&#x95F4;&#xFF0C;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x661F;&#x53F7;&#x3002;Generator&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;next&#xFF0C;&#x8868;&#x793A;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</p>
+<p>Generator&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4F7F;&#x7528;yield&#x547D;&#x4EE4;&#xFF0C;&#x5C06;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x6743;&#x8F6C;&#x4EA4;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5373;<code>yield next</code>&#xFF0C;&#x8981;&#x7B49;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x624D;&#x4F1A;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#x6267;&#x884C;&#x3002;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Generator&#x51FD;&#x6570;&#x4F53;&#x5185;&#x90E8;&#xFF0C;&#x7B2C;&#x4E00;&#x884C;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x9996;&#x5148;&#x6267;&#x884C;&#xFF0C;&#x5F00;&#x59CB;&#x8BA1;&#x65F6;&#xFF0C;&#x7B2C;&#x4E8C;&#x884C;yield&#x8BED;&#x53E5;&#x5C06;&#x6267;&#x884C;&#x6743;&#x4EA4;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5F53;&#x524D;&#x4E2D;&#x95F4;&#x4EF6;&#x5C31;&#x6682;&#x505C;&#x6267;&#x884C;&#x3002;&#x7B49;&#x5230;&#x540E;&#x9762;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x5168;&#x90E8;&#x6267;&#x884C;&#x5B8C;&#x6210;&#xFF0C;&#x6267;&#x884C;&#x6743;&#x5C31;&#x56DE;&#x5230;&#x539F;&#x6765;&#x6682;&#x505C;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x65F6;&#x624D;&#x4F1A;&#x6267;&#x884C;&#x7B2C;&#x4E09;&#x884C;&#xFF0C;&#x8BA1;&#x7B97;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E00;&#x5171;&#x82B1;&#x4E86;&#x591A;&#x5C11;&#x65F6;&#x95F4;&#xFF0C;&#x7B2C;&#x56DB;&#x884C;&#x5C06;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x4E24;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x7EA7;&#x8054;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&quot;header\n&quot;</span>;
+  <span class="hljs-keyword">yield</span> saveResults();
+  <span class="hljs-keyword">this</span>.body += <span class="hljs-string">&quot;footer\n&quot;</span>;
+});
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">saveResults</span>*<span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">this</span>.body += <span class="hljs-string">&quot;Results Saved!\n&quot;</span>;
+}
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x8C03;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;saveResults&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x5411;<code>this.body</code>&#x5199;&#x5165;&#x5185;&#x5BB9;&#x3002;&#x6700;&#x540E;&#xFF0C;<code>this.body</code>&#x7684;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-javascript">header
+Results Saved!
+footer
+</code></pre>
+<p>&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x7F3A;&#x5C11;<code>yield next</code>&#x8BED;&#x53E5;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x90FD;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x8981;&#x5F15;&#x8D77;&#x6CE8;&#x610F;&#x3002;</p>
+<pre><code class="lang-javascript">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">(next)</span></span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; one&apos;</span>);
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; one&apos;</span>);
+});
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">(next)</span></span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; two&apos;</span>);
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;two&apos;</span>;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; two&apos;</span>);
+});
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">(next)</span></span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&gt;&gt; three&apos;</span>);
+  <span class="hljs-keyword">yield</span> next;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&lt;&lt; three&apos;</span>);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x5C11;&#x4E86;<code>yield next</code>&#x8BED;&#x53E5;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x5E76;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x7531;&#x4E8E;Koa&#x8981;&#x6C42;&#x4E2D;&#x95F4;&#x4EF6;&#x552F;&#x4E00;&#x7684;&#x53C2;&#x6570;&#x5C31;&#x662F;next&#xFF0C;&#x5BFC;&#x81F4;&#x5982;&#x679C;&#x8981;&#x4F20;&#x5165;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#xFF0C;&#x5FC5;&#x987B;&#x53E6;&#x5916;&#x5199;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;Generator&#x51FD;&#x6570;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">logger</span><span class="hljs-params">(format)</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">(next)</span></span>{
+    <span class="hljs-keyword">var</span> str = format
+      .replace(<span class="hljs-string">&apos;:method&apos;</span>, <span class="hljs-keyword">this</span>.method)
+      .replace(<span class="hljs-string">&apos;:url&apos;</span>, <span class="hljs-keyword">this</span>.url);
+
+    <span class="hljs-built_in">console</span>.log(str);
+
+    <span class="hljs-keyword">yield</span> next;
+  }
+}
+
+app.use(logger(<span class="hljs-string">&apos;:method :url&apos;</span>));
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x771F;&#x6B63;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x662F;logger&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x800C;logger&#x51FD;&#x6570;&#x662F;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x53C2;&#x6570;&#x7684;&#x3002;</p>
+<h3 id="%E5%A4%9A%E4%B8%AA%E4%B8%AD%E9%97%B4%E4%BB%B6%E7%9A%84%E5%90%88%E5%B9%B6">&#x591A;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x5408;&#x5E76;</h3>
+<p>&#x7531;&#x4E8E;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x53C2;&#x6570;&#x7EDF;&#x4E00;&#x4E3A;next&#xFF08;&#x610F;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>.call(this, next)</code>&#xFF0C;&#x5C06;&#x591A;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">random</span><span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;/random&apos;</span> == <span class="hljs-keyword">this</span>.path) {
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random()*<span class="hljs-number">10</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">yield</span> next;
+  }
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">backwards</span><span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;/backwards&apos;</span> == <span class="hljs-keyword">this</span>.path) {
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;sdrawkcab&apos;</span>;
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">yield</span> next;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">pi</span><span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;/pi&apos;</span> == <span class="hljs-keyword">this</span>.path) {
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-built_in">String</span>(<span class="hljs-built_in">Math</span>.PI);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">yield</span> next;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">all</span><span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">yield</span> random.call(<span class="hljs-keyword">this</span>, backwards.call(<span class="hljs-keyword">this</span>, pi.call(<span class="hljs-keyword">this</span>, next)));
+}
+
+app.use(all);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4E2D;&#x95F4;&#x4EF6;all&#x5185;&#x90E8;&#xFF0C;&#x5C31;&#x662F;&#x4F9D;&#x6B21;&#x8C03;&#x7528;random&#x3001;backwards&#x3001;pi&#xFF0C;&#x540E;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x5C31;&#x662F;&#x524D;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>Koa&#x5185;&#x90E8;&#x4F7F;&#x7528;koa-compose&#x6A21;&#x5757;&#xFF0C;&#x8FDB;&#x884C;&#x540C;&#x6837;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x5B83;&#x7684;&#x6E90;&#x7801;&#x3002;</p>
+<pre><code>function compose(middleware){
+  return function *(next){
+    if (!next) next = noop();
+
+    var i = middleware.length;
+
+    while (i--) {
+      next = middleware[i].call(this, next);
+    }
+
+    yield *next;
+  }
+}
+
+function *noop(){}
+</code></pre><p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;middleware&#x662F;&#x4E2D;&#x95F4;&#x4EF6;&#x6570;&#x7EC4;&#x3002;&#x524D;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x53C2;&#x6570;&#x662F;&#x540E;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x4F9D;&#x6B21;&#x7C7B;&#x63A8;&#x3002;&#x5982;&#x679C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x6CA1;&#x6709;next&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x7A7A;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="%E8%B7%AF%E7%94%B1">&#x8DEF;&#x7531;</h2>
+<p>&#x8DEF;&#x7531;&#x9700;&#x8981;&#x5B89;&#x88C5;koa-route&#x63D2;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;koa&quot;</span>)();
+<span class="hljs-keyword">var</span> route = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;koa-route&quot;</span>);
+
+app.use(route.get(<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;Hello World&apos;</span>;
+  }
+  <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-keyword">this</span>.status = <span class="hljs-number">500</span>;
+    <span class="hljs-keyword">this</span>.body = {success: <span class="hljs-literal">false</span>, err: err};
+  }
+}));
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x8DEF;&#x7531;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;<code>this.path</code>&#x5C5E;&#x6027;&#x5224;&#x65AD;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>)
+
+<span class="hljs-keyword">let</span> app = koa()
+
+<span class="hljs-comment">// normal route</span>
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.path !== <span class="hljs-string">&apos;/&apos;</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">yield</span> next
+  }
+
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;hello world&apos;</span>
+});
+
+<span class="hljs-comment">// /404 route</span>
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.path !== <span class="hljs-string">&apos;/404&apos;</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">yield</span> next;
+  }
+
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;page not found&apos;</span>
+});
+
+<span class="hljs-comment">// /500 route</span>
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.path !== <span class="hljs-string">&apos;/500&apos;</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">yield</span> next;
+  }
+
+  <span class="hljs-keyword">this</span>.body = <span class="hljs-string">&apos;internal server error&apos;</span>
+});
+
+app.listen(<span class="hljs-number">8080</span>)
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x8D1F;&#x8D23;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#xFF0C;&#x5982;&#x679C;&#x8DEF;&#x5F84;&#x4E0D;&#x7B26;&#x5408;&#xFF0C;&#x5C31;&#x4F20;&#x9012;&#x7ED9;&#x4E0B;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</p>
+<h2 id="%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6">&#x9519;&#x8BEF;&#x5904;&#x7406;&#x673A;&#x5236;</h2>
+<p>Koa&#x63D0;&#x4F9B;&#x5185;&#x7F6E;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x673A;&#x5236;&#xFF0C;&#x4EFB;&#x4F55;&#x4E2D;&#x95F4;&#x4EF6;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#x90FD;&#x4F1A;&#x88AB;&#x6355;&#x6349;&#x5230;&#xFF0C;&#x5F15;&#x53D1;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;500&#x9519;&#x8BEF;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x8FDB;&#x7A0B;&#x505C;&#x6B62;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x5C31;&#x4E0D;&#x9700;&#x8981;forever&#x8FD9;&#x6837;&#x7684;&#x6A21;&#x5757;&#x91CD;&#x542F;&#x8FDB;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-javascript">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>();
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4E2D;&#x95F4;&#x4EF6;&#x5185;&#x90E8;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;Koa&#x5E94;&#x7528;&#x6302;&#x6389;&#x3002;Koa&#x5185;&#x7F6E;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x673A;&#x5236;&#xFF0C;&#x4F1A;&#x6355;&#x6349;&#x5230;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x989D;&#x5916;&#x90E8;&#x7F72;&#x81EA;&#x5DF1;&#x7684;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x673A;&#x5236;&#x3002;</p>
+<pre><code class="lang-javascript">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">yield</span> saveResults();
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-keyword">this</span>.throw(<span class="hljs-number">400</span>, <span class="hljs-string">&apos;&#x6570;&#x636E;&#x65E0;&#x6548;&apos;</span>);
+  }
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x81EA;&#x884C;&#x90E8;&#x7F72;&#x4E86;try...catch&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x4E00;&#x65E6;&#x4EA7;&#x751F;&#x9519;&#x8BEF;&#xFF0C;&#x5C31;&#x7528;<code>this.throw</code>&#x65B9;&#x6CD5;&#x629B;&#x51FA;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5C06;&#x6307;&#x5B9A;&#x7684;&#x72B6;&#x6001;&#x7801;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x672A;&#x6355;&#x83B7;&#x9519;&#x8BEF;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;error&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">app.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err)</span></span>{
+  log.error(<span class="hljs-string">&apos;server error&apos;</span>, err);
+});
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x4E2D;&#x95F4;&#x4EF6;&#x662F;&#x5C42;&#x7EA7;&#x5F0F;&#x8C03;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x628A;<code>try { yield next }</code>&#x5F53;&#x6210;&#x7B2C;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-javascript">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">yield</span> next;
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-keyword">this</span>.status = err.status || <span class="hljs-number">500</span>;
+    <span class="hljs-keyword">this</span>.body = err.message;
+    <span class="hljs-keyword">this</span>.app.emit(<span class="hljs-string">&apos;error&apos;</span>, err, <span class="hljs-keyword">this</span>);
+  }
+});
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;some error&apos;</span>);
+})
+</code></pre>
+<h2 id="context%E5%AF%B9%E8%B1%A1">context&#x5BF9;&#x8C61;</h2>
+<p>context&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x4E00;&#x6B21;HTTP&#x8BF7;&#x6C42;&#x548C;&#x56DE;&#x5E94;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x7406;&#x89E3;&#x4E3A;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x83B7;&#x5F97;&#x3002;</p>
+<p>context&#x5BF9;&#x8C61;&#x5C01;&#x88C5;&#x4E86;request&#x5BF9;&#x8C61;&#x548C;response&#x5BF9;&#x8C61;&#xFF0C;&#x5373;context&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;request&#x5BF9;&#x8C61;&#x548C;response&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x6BD4;&#x5982;&#xFF0C;ctx.type&#x548C;ctx.length&#x6765;&#x81EA;response&#x5BF9;&#x8C61;&#xFF0C;ctx.path&#x548C;ctx.method&#x6765;&#x81EA;request&#x5BF9;&#x8C61;&#x3002;</p>
+<p>context&#x5BF9;&#x8C61;&#x7684;&#x5168;&#x5C40;&#x5C5E;&#x6027;&#x3002;</p>
+<ul>
+<li>request&#xFF1A;&#x6307;&#x5411;Request&#x5BF9;&#x8C61;</li>
+<li>response&#xFF1A;&#x6307;&#x5411;Response&#x5BF9;&#x8C61;</li>
+<li>app&#xFF1A;&#x6307;&#x5411;App&#x5BF9;&#x8C61;</li>
+</ul>
+<p>context&#x5BF9;&#x8C61;&#x7684;&#x5168;&#x5C40;&#x65B9;&#x6CD5;&#x3002;</p>
+<ul>
+<li><p>throw()&#xFF1A;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x76F4;&#x63A5;&#x51B3;&#x5B9A;&#x4E86;HTTP&#x56DE;&#x5E94;&#x7684;&#x72B6;&#x6001;&#x7801;&#x3002;</p>
+</li>
+<li><p>assert()&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;false&#xFF0C;&#x5219;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.throw(<span class="hljs-number">403</span>);
+<span class="hljs-keyword">this</span>.throw(<span class="hljs-string">&apos;name required&apos;</span>, <span class="hljs-number">400</span>);
+<span class="hljs-keyword">this</span>.throw(<span class="hljs-string">&apos;something exploded&apos;</span>);
+
+<span class="hljs-keyword">this</span>.throw(<span class="hljs-number">400</span>, <span class="hljs-string">&apos;name required&apos;</span>);
+<span class="hljs-comment">// &#x7B49;&#x540C;&#x4E8E;</span>
+<span class="hljs-keyword">var</span> err = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;name required&apos;</span>);
+err.status = <span class="hljs-number">400</span>;
+<span class="hljs-keyword">throw</span> err;
+</code></pre>
+<p>assert&#x65B9;&#x6CD5;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x683C;&#x5F0F;</span>
+ctx.assert(value, [msg], [status], [properties])
+
+<span class="hljs-comment">// &#x4F8B;&#x5B50;</span>
+<span class="hljs-keyword">this</span>.assert(<span class="hljs-keyword">this</span>.user, <span class="hljs-number">401</span>, <span class="hljs-string">&apos;User not found. Please login!&apos;</span>);
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x4E3A;&#x4EE3;&#x7406;Request&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<ul>
+<li>ctx.header</li>
+<li>ctx.headers</li>
+<li>ctx.method</li>
+<li>ctx.method=</li>
+<li>ctx.url</li>
+<li>ctx.url=</li>
+<li>ctx.originalUrl</li>
+<li>ctx.href</li>
+<li>ctx.path</li>
+<li>ctx.path=</li>
+<li>ctx.query</li>
+<li>ctx.query=</li>
+<li>ctx.querystring</li>
+<li>ctx.querystring=</li>
+<li>ctx.host</li>
+<li>ctx.hostname</li>
+<li>ctx.fresh</li>
+<li>ctx.stale</li>
+<li>ctx.socket</li>
+<li>ctx.protocol</li>
+<li>ctx.secure</li>
+<li>ctx.ip</li>
+<li>ctx.ips</li>
+<li>ctx.subdomains</li>
+<li>ctx.is()</li>
+<li>ctx.accepts()</li>
+<li>ctx.acceptsEncodings()</li>
+<li>ctx.acceptsCharsets()</li>
+<li>ctx.acceptsLanguages()</li>
+<li>ctx.get()</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x4E3A;&#x4EE3;&#x7406;Response&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<ul>
+<li>ctx.body</li>
+<li>ctx.body=</li>
+<li>ctx.status</li>
+<li>ctx.status=</li>
+<li>ctx.message</li>
+<li>ctx.message=</li>
+<li>ctx.length=</li>
+<li>ctx.length</li>
+<li>ctx.type=</li>
+<li>ctx.type</li>
+<li>ctx.headerSent</li>
+<li>ctx.redirect()</li>
+<li>ctx.attachment()</li>
+<li>ctx.set()</li>
+<li>ctx.remove()</li>
+<li>ctx.lastModified=</li>
+<li>ctx.etag=</li>
+</ul>
+<p>&#x8BBE;&#x7F6E;cookie&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.cookies.set(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;tobi&apos;</span>);
+<span class="hljs-keyword">this</span>.cookies.get(<span class="hljs-string">&apos;name&apos;</span>) <span class="hljs-comment">// &quot;tobi&quot;</span>
+</code></pre>
+<h2 id="request%E5%AF%B9%E8%B1%A1">Request&#x5BF9;&#x8C61;</h2>
+<p>Request&#x5BF9;&#x8C61;&#x8868;&#x793A;HTTP&#x8BF7;&#x6C42;&#x3002;</p>
+<ul>
+<li>request.type // &quot;image/png&quot;</li>
+<li>request.charset // &quot;utf-8&quot;</li>
+<li>request.query &#x8FD4;&#x56DE;&#x89E3;&#x6790;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BD4;&#x5982;&#x201D;color=blue&amp;size=small&#x201C;&#xFF0C;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x5F62;&#x5F0F;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript">{
+  color: <span class="hljs-string">&apos;blue&apos;</span>,
+  size: <span class="hljs-string">&apos;small&apos;</span>
+}
+</code></pre>
+<h2 id="response%E5%AF%B9%E8%B1%A1">Response&#x5BF9;&#x8C61;</h2>
+<p>Response&#x5BF9;&#x8C61;&#x8868;&#x793A;HTTP&#x56DE;&#x5E94;&#x3002;</p>
+<ul>
+<li>response.header</li>
+<li>response.socket</li>
+<li>response.status</li>
+<li>response.status=</li>
+<li>response.message</li>
+<li>response.message=</li>
+<li>response.length=</li>
+<li>response.length</li>
+<li>response.body</li>
+<li>response.body=</li>
+<li>response.get(field)</li>
+<li>response.set(field, value)</li>
+<li>response.set(fields)</li>
+<li>response.remove(field)</li>
+<li>response.type</li>
+<li>response.type=</li>
+<li>response.is(types...)</li>
+<li>response.redirect(url, [alt])</li>
+<li>response.attachment([filename])</li>
+<li>response.headerSent</li>
+<li>response.lastModified</li>
+<li>response.lastModified=</li>
+<li>response.etag=</li>
+<li>response.vary(field)</li>
+</ul>
+<h2 id="%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9">&#x6570;&#x636E;&#x538B;&#x7F29;</h2>
+<p>koa-compress&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x538B;&#x7F29;&#x3002;</p>
+<pre><code class="lang-javascript">app.use(<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa-compress&apos;</span>)())
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">this</span>.type = <span class="hljs-string">&apos;text/plain&apos;</span>
+  <span class="hljs-keyword">this</span>.body = fs.createReadStream(<span class="hljs-string">&apos;filename.txt&apos;</span>)
+})
+</code></pre>
+<h2 id="%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB">&#x6E90;&#x7801;&#x89E3;&#x8BFB;</h2>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;app&#xFF0C;&#x5B83;&#x7531;<code>lib/application</code>&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Application</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">if</span> (!(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> Application)) <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Application;
+  <span class="hljs-keyword">this</span>.env = process.env.NODE_ENV || <span class="hljs-string">&apos;development&apos;</span>;
+  <span class="hljs-keyword">this</span>.subdomainOffset = <span class="hljs-number">2</span>;
+  <span class="hljs-keyword">this</span>.middleware = [];
+  <span class="hljs-keyword">this</span>.context = <span class="hljs-built_in">Object</span>.create(context);
+  <span class="hljs-keyword">this</span>.request = <span class="hljs-built_in">Object</span>.create(request);
+  <span class="hljs-keyword">this</span>.response = <span class="hljs-built_in">Object</span>.create(response);
+}
+
+<span class="hljs-keyword">var</span> app = Application.prototype;
+
+exports = <span class="hljs-built_in">module</span>.exports = Application;
+</code></pre>
+<p><code>app.use()</code>&#x7528;&#x4E8E;&#x6CE8;&#x518C;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5373;&#x5C06;Generator&#x51FD;&#x6570;&#x653E;&#x5165;&#x4E2D;&#x95F4;&#x4EF6;&#x6570;&#x7EC4;&#x3002;</p>
+<pre><code class="lang-javascript">app.use = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(fn)</span></span>{
+  <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.experimental) {
+    <span class="hljs-comment">// es7 async functions are allowed</span>
+    assert(fn &amp;&amp; <span class="hljs-string">&apos;GeneratorFunction&apos;</span> == fn.constructor.name, <span class="hljs-string">&apos;app.use() requires a generator function&apos;</span>);
+  }
+  debug(<span class="hljs-string">&apos;use %s&apos;</span>, fn._name || fn.name || <span class="hljs-string">&apos;-&apos;</span>);
+  <span class="hljs-keyword">this</span>.middleware.push(fn);
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+};
+</code></pre>
+<p><code>app.listen()</code>&#x5C31;&#x662F;<code>http.createServer(app.callback()).listen(...)</code>&#x7684;&#x7F29;&#x5199;&#x3002;</p>
+<pre><code class="lang-javascript">app.listen = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+  debug(<span class="hljs-string">&apos;listen&apos;</span>);
+  <span class="hljs-keyword">var</span> server = http.createServer(<span class="hljs-keyword">this</span>.callback());
+  <span class="hljs-keyword">return</span> server.listen.apply(server, <span class="hljs-built_in">arguments</span>);
+};
+
+app.callback = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+  <span class="hljs-keyword">var</span> mw = [respond].concat(<span class="hljs-keyword">this</span>.middleware);
+  <span class="hljs-keyword">var</span> fn = <span class="hljs-keyword">this</span>.experimental
+    ? compose_es7(mw)
+    : co.wrap(compose(mw));
+  <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+
+  <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.listeners(<span class="hljs-string">&apos;error&apos;</span>).length) <span class="hljs-keyword">this</span>.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-keyword">this</span>.onerror);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req, res)</span></span>{
+    res.statusCode = <span class="hljs-number">404</span>;
+    <span class="hljs-keyword">var</span> ctx = self.createContext(req, res);
+    onFinished(res, ctx.onerror);
+    fn.call(ctx).catch(ctx.onerror);
+  }
+};
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>app.callback()</code>&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x5904;&#x7406;HTTP&#x8BF7;&#x6C42;&#x3002;&#x5B83;&#x7684;&#x7B2C;&#x4E00;&#x884C;<code>mw = [respond].concat(this.middleware)</code>&#xFF0C;&#x8868;&#x793A;&#x5C06;respond&#x51FD;&#x6570;&#xFF08;&#x8FD9;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;Generator&#x51FD;&#x6570;&#xFF09;&#x653E;&#x5165;<code>this.middleware</code>&#xFF0C;&#x73B0;&#x5728;mw&#x5C31;&#x53D8;&#x6210;&#x4E86;<code>[respond, S1, S2, S3]</code>&#x3002;</p>
+<p><code>compose(mw)</code>&#x5C06;&#x4E2D;&#x95F4;&#x4EF6;&#x6570;&#x7EC4;&#x8F6C;&#x4E3A;&#x4E00;&#x4E2A;&#x5C42;&#x5C42;&#x8C03;&#x7528;&#x7684;Generator&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span><span class="hljs-params">(middleware)</span></span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-params">(next)</span></span>{
+    <span class="hljs-keyword">if</span> (!next) next = noop();
+
+    <span class="hljs-keyword">var</span> i = middleware.length;
+
+    <span class="hljs-keyword">while</span> (i--) {
+      next = middleware[i].call(<span class="hljs-keyword">this</span>, next);
+    }
+
+    <span class="hljs-keyword">yield</span> *next;
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">noop</span><span class="hljs-params">()</span></span>{}
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4E0B;&#x4E00;&#x4E2A;generator&#x51FD;&#x6570;&#x603B;&#x662F;&#x4E0A;&#x4E00;&#x4E2A;Generator&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x4E86;&#x5C42;&#x5C42;&#x8C03;&#x7528;&#x3002;</p>
+<p><code>var fn = co.wrap(gen)</code>&#x5219;&#x662F;&#x5C06;Generator&#x51FD;&#x6570;&#x5305;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Promise&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">//co package</span>
+co.wrap = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(fn)</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> co.call(<span class="hljs-keyword">this</span>, fn.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>));
+  };
+};
+</code></pre>
+<p>&#x7531;&#x4E8E;<code>co.wrap(compose(mw))</code>&#x6267;&#x884C;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;Promise&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5BF9;&#x5176;&#x4F7F;&#x7528;catch&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x6355;&#x6349;&#x9519;&#x8BEF;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;<code>fn.call(ctx).catch(ctx.onerror)</code>&#x3002;</p>
+<p>&#x5C06;&#x6240;&#x6709;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x53D8;&#x91CF;&#x90FD;&#x653E;&#x8FDB;context&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript">app.createContext = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req, res)</span></span>{
+  <span class="hljs-keyword">var</span> context = <span class="hljs-built_in">Object</span>.create(<span class="hljs-keyword">this</span>.context);
+  <span class="hljs-keyword">var</span> request = context.request = <span class="hljs-built_in">Object</span>.create(<span class="hljs-keyword">this</span>.request);
+  <span class="hljs-keyword">var</span> response = context.response = <span class="hljs-built_in">Object</span>.create(<span class="hljs-keyword">this</span>.response);
+  context.app = request.app = response.app = <span class="hljs-keyword">this</span>;
+  context.req = request.req = response.req = req;
+  context.res = request.res = response.res = res;
+  request.ctx = response.ctx = context;
+  request.response = response;
+  response.request = request;
+  context.onerror = context.onerror.bind(context);
+  context.originalUrl = request.originalUrl = req.url;
+  context.cookies = <span class="hljs-keyword">new</span> Cookies(req, res, <span class="hljs-keyword">this</span>.keys);
+  context.accept = request.accept = accepts(req);
+  context.state = {};
+  <span class="hljs-keyword">return</span> context;
+};
+</code></pre>
+<p>&#x771F;&#x6B63;&#x5904;&#x7406;HTTP&#x8BF7;&#x6C42;&#x7684;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;Generator&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">respond</span><span class="hljs-params">(next)</span> </span>{
+  <span class="hljs-keyword">yield</span> *next;
+
+  <span class="hljs-comment">// allow bypassing koa</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">false</span> === <span class="hljs-keyword">this</span>.respond) <span class="hljs-keyword">return</span>;
+
+  <span class="hljs-keyword">var</span> res = <span class="hljs-keyword">this</span>.res;
+  <span class="hljs-keyword">if</span> (res.headersSent || !<span class="hljs-keyword">this</span>.writable) <span class="hljs-keyword">return</span>;
+
+  <span class="hljs-keyword">var</span> body = <span class="hljs-keyword">this</span>.body;
+  <span class="hljs-keyword">var</span> code = <span class="hljs-keyword">this</span>.status;
+
+  <span class="hljs-comment">// ignore body</span>
+  <span class="hljs-keyword">if</span> (statuses.empty[code]) {
+    <span class="hljs-comment">// strip headers</span>
+    <span class="hljs-keyword">this</span>.body = <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">return</span> res.end();
+  }
+
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;HEAD&apos;</span> == <span class="hljs-keyword">this</span>.method) {
+    <span class="hljs-keyword">if</span> (isJSON(body)) <span class="hljs-keyword">this</span>.length = Buffer.byteLength(<span class="hljs-built_in">JSON</span>.stringify(body));
+    <span class="hljs-keyword">return</span> res.end();
+  }
+
+  <span class="hljs-comment">// status body</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">null</span> == body) {
+    <span class="hljs-keyword">this</span>.type = <span class="hljs-string">&apos;text&apos;</span>;
+    body = <span class="hljs-keyword">this</span>.message || <span class="hljs-built_in">String</span>(code);
+    <span class="hljs-keyword">this</span>.length = Buffer.byteLength(body);
+    <span class="hljs-keyword">return</span> res.end(body);
+  }
+
+  <span class="hljs-comment">// responses</span>
+  <span class="hljs-keyword">if</span> (Buffer.isBuffer(body)) <span class="hljs-keyword">return</span> res.end(body);
+  <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;string&apos;</span> == <span class="hljs-keyword">typeof</span> body) <span class="hljs-keyword">return</span> res.end(body);
+  <span class="hljs-keyword">if</span> (body <span class="hljs-keyword">instanceof</span> Stream) <span class="hljs-keyword">return</span> body.pipe(res);
+
+  <span class="hljs-comment">// body: json</span>
+  body = <span class="hljs-built_in">JSON</span>.stringify(body);
+  <span class="hljs-keyword">this</span>.length = Buffer.byteLength(body);
+  res.end(body);
+}
+</code></pre>
+<h2 id="%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
+<ul>
+<li><a href="https://github.com/koajs/koa/blob/master/docs/guide.md" target="_blank">Koa Guide</a></li>
+<li>William XING, <a href="http://william.xingyp.com/is-koa-js-right-for-me/" target="_blank">Is Koa.js right for me?</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../nodejs/express.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Express框架"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

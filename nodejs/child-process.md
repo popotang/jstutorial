@@ -1,10 +1,4 @@
----
-title: Child Process模块
-layout: page
-category: nodejs
-date: 2014-05-24
-modifiedOn: 2014-05-24
----
+
 
 child_process模块用于新建子进程。子进程的运行结果储存在系统缓存之中（最大200KB），等到子进程运行结束以后，主进程再用回调函数读取子进程的运行结果。
 

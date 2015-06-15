@@ -1,10 +1,4 @@
----
-title: CommonJS规范
-layout: page
-category: nodejs
-date: 2013-06-04
-modifiedOn: 2013-08-13
----
+
 
 ## 概述
 
@@ -44,12 +38,12 @@ module.exports.addX = addX;
 
 require方法用于在其他文件加载这个接口，具体用法参见《Require命令》的部分。
 
-{% highlight javascript %}
+``` javascript
 var example = require('./example.js');
 
 console.log(example.x); // 5
 console.log(addX(1)); // 6
-{% endhighlight %}
+```
 
 ## module对象
 
@@ -120,15 +114,15 @@ a.on('ready', function() {
 
 为了方便，Node为每个模块提供一个exports变量，指向module.exports。这等同在每个模块头部，有一行这样的命令。
 
-{% highlight javascript %}
+``` javascript
 
 var exports = module.exports;
 
-{% endhighlight %}
+```
 
 造成的结果是，在对外输出模块接口时，可以向exports对象添加方法。
 
-{% highlight javascript %}
+``` javascript
 
 exports.area = function (r) {
   return Math.PI * r * r;
@@ -138,15 +132,15 @@ exports.circumference = function (r) {
   return 2 * Math.PI * r;
 };
 
-{% endhighlight %}
+```
 
 注意，不能直接将exports变量指向一个函数。因为这样等于切断了exports与module.exports的联系。
 
-{% highlight javascript %}
+``` javascript
 
 exports = function (x){ console.log(x);};
 
-{% endhighlight %}
+```
 
 上面这样的写法是无效的，因为它切断了exports与module.exports之间的链接。
 
@@ -164,11 +158,11 @@ module.exports = 'Hello world';
 
 如果一个模块的对外接口，就是一个函数或对象时，不能使用exports输出，只能使用module.exports输出。
 
-{% highlight javascript %}
+``` javascript
 
 module.exports = function (x){ console.log(x);};
 
-{% endhighlight %}
+```
 
 如果你觉得，exports与module.exports之间的区别很难分清，一个简单的处理方法，就是放弃使用exports，只使用module.exports。
 
@@ -178,7 +172,7 @@ CommonJS规范加载模块是同步的，也就是说，只有加载完成，才
 
 AMD规范使用define方法定义模块，下面就是一个例子：
 
-{% highlight javascript %}
+``` javascript
 
 define(['package/lib'], function(lib){
   function foo(){
@@ -190,11 +184,11 @@ define(['package/lib'], function(lib){
   };
 });
 
-{% endhighlight %}
+```
 
 AMD规范允许输出的模块兼容CommonJS规范，这时define方法需要写成下面这样：
 
-{% highlight javascript %}
+``` javascript
 
 define(function (require, exports, module){
   var someModule = require("someModule");
@@ -209,7 +203,7 @@ define(function (require, exports, module){
   };
 });
 
-{% endhighlight %}
+```
 
 ## require命令
 

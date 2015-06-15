@@ -1,10 +1,4 @@
----
-title: WebRTC
-layout: page
-category: bom
-date: 2013-01-10
-modifiedOn: 2013-10-04
----
+
 
 ## 概述
 
@@ -32,7 +26,7 @@ navigator.getUserMedia方法目前主要用于，在浏览器中获取音频（�
 
 下面的代码用于检查浏览器是否支持getUserMedia方法。
 
-{% highlight javascript %}
+``` javascript
 
 navigator.getUserMedia  = navigator.getUserMedia ||
                           navigator.webkitGetUserMedia ||
@@ -45,20 +39,20 @@ if (navigator.getUserMedia) {
     // 不支持
 }
 
-{% endhighlight %}
+```
 
 Chrome 21, Opera 18和Firefox 17，支持该方法。目前，IE还不支持，上面代码中的msGetUserMedia，只是为了确保将来的兼容。
 
 getUserMedia方法接受三个参数。
 
-{% highlight javascript %}
+``` javascript
 
 navigator.getUserMedia({
     video: true, 
     audio: true
 }, onSuccess, onError);
 
-{% endhighlight %}
+```
 
 getUserMedia的第一个参数是一个对象，表示要获取哪些多媒体设备，上面的代码表示获取摄像头和麦克风;onSuccess是一个回调函数，在获取多媒体设备成功时调用；onError也是一个回调函数，在取多媒体设备失败时调用。
 
@@ -97,25 +91,25 @@ onError回调函数接受一个Error对象作为参数。Error对象的code属�
 
 首先，需要先在网页上放置一个video元素。图像就展示在这个元素中。
 
-{% highlight html %}
+``` html
 
 <video id="webcam"></video>
 
-{% endhighlight %}
+```
 
 然后，用代码获取这个元素。
 
-{% highlight javascript %}
+``` javascript
 
 function onSuccess(stream) {
     var video = document.getElementById('webcam');
 }
 
-{% endhighlight %}
+```
 
 接着，将这个元素的src属性绑定数据流，摄影头拍摄的图像就可以显示了。
 
-{% highlight javascript %}
+``` javascript
 
 function onSuccess(stream) {
     var video = document.getElementById('webcam');
@@ -135,7 +129,7 @@ if (navigator.getUserMedia) {
 	document.getElementById('webcam').src = 'somevideo.mp4';
 }
 
-{% endhighlight %}
+```
 
 在Chrome和Opera中，URL.createObjectURL方法将媒体数据流（MediaStream）转为一个二进制对象的URL（Blob URL），该URL可以作为video元素的src属性的值。 在Firefox中，媒体数据流可以直接作为src属性的值。Chrome和Opera还允许getUserMedia获取的音频数据，直接作为audio或者video元素的值，也就是说如果还获取了音频，上面代码播放出来的视频是有声音的。
 

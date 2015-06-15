@@ -1,10 +1,4 @@
----
-title: package.json文件
-layout: page
-category: nodejs
-date: 2014-10-24
-modifiedOn: 2014-10-24
----
+
 
 ## 概述
 
@@ -12,20 +6,20 @@ modifiedOn: 2014-10-24
 
 下面是一个最简单的package.json文件，只定义两项元数据：项目名称和项目版本。
 
-{% highlight javascript %}
+``` javascript
 
 {
   "name" : "xxx",
   "version" : "0.0.0",
 }
 
-{% endhighlight %}
+```
 
 上面代码说明，package.json文件内部就是一个json对象，该对象的每一个成员就是当前项目的一项设置。比如name就是项目名称，version是版本（遵守“大版本.次要版本.小版本”的格式）。
 
 下面是一个更完整的package.json文件。
 
-{% highlight javascript %}
+``` javascript
 
 {
 	"name": "Hello World",
@@ -63,7 +57,7 @@ modifiedOn: 2014-10-24
 	}
 }
 
-{% endhighlight %}
+```
 
 下面详细解释package.json文件的成员。
 
@@ -73,7 +67,7 @@ scripts指定了运行脚本命令的npm命令行缩写，比如start指定了�
 
 下面的设置指定了npm run preinstall、npm run postinstall、npm run start、npm run test时，所要执行的命令。
 
-{% highlight javascript %}
+``` javascript
 
 "scripts": {
     "preinstall": "echo here it comes!",
@@ -82,7 +76,7 @@ scripts指定了运行脚本命令的npm命令行缩写，比如start指定了�
     "test": "tap test/*.js"
 }
 
-{% endhighlight %}
+```
 
 ## dependencies，devDependencies
 
@@ -97,30 +91,30 @@ dependencies和devDependencies这两项，都指向一个对象。该对象的�
 
 package.json文件可以手工编写，也可以使用npm init命令自动生成。
 
-{% highlight bash %}
+``` bash
 
 npm init
 
-{% endhighlight %}
+```
 
 这个命令采用互动方式，要求用户回答一些问题，然后在当前目录生成一个基本的package.json文件。所有问题之中，只有项目名称（name）和项目版本（version）是必填的，其他都是选填的。
 
 有了package.json文件，直接使用npm install命令，就会在当前目录中安装所需要的模块。
 
-{% highlight bash %}
+``` bash
 
 npm install
 
-{% endhighlight %}
+```
 
 如果一个模块不在package.json文件之中，可以单独安装这个模块，并使用相应的参数，将其写入package.json文件之中。
 
-{% highlight bash %}
+``` bash
 
 npm install express --save
 npm install express --save-dev
 
-{% endhighlight %}
+```
 
 上面代码表示单独安装express模块，--save参数表示将该模块写入dependencies属性，--save-dev表示将该模块写入devDependencies属性。
 

@@ -1,10 +1,4 @@
----
-title: process对象
-category: nodejs
-layout: page
-date: 2014-10-20
-modifiedOn: 2014-10-20
----
+
 
 process对象是Node的一个全局对象，提供当前node进程的信息。它可以在脚本的任意位置使用，不必通过require命令加载。该对象部署了EventEmitter接口。
 
@@ -163,7 +157,7 @@ process对象提供以下方法：
 
 cwd方法返回进程的当前目录，chdir方法用来切换目录。
 
-{% highlight bash %}
+``` bash
 
 > process.cwd()
 '/home/aaa'
@@ -172,29 +166,29 @@ cwd方法返回进程的当前目录，chdir方法用来切换目录。
 > process.cwd()
 '/home/bbb'
 
-{% endhighlight %}
+```
 
 ## process.nextTick()
 
 process.nextTick()将任务放到当前执行栈的尾部。
 
-{% highlight bash %}
+``` bash
 
 process.nextTick(function () {
     console.log('下一次Event Loop即将开始!');
 });
 
-{% endhighlight %}
+```
 
 上面代码可以用`setTimeout(f,0)`改写，效果接近，但是原理不同。`setTimeout(f,0)`是将任务放到当前任务队列的尾部，在下一次Event Loop时执行。另外，nextTick的效率更高，因为不用检查是否到了指定时间。
 
-{% highlight bash %}
+``` bash
 
 setTimeout(function () {
    console.log('已经到了下一轮Event Loop！');
 }, 0)
 
-{% endhighlight %}
+```
 
 ### process.exit()
 
@@ -300,13 +294,13 @@ setTimeout(function(){
 
 当前进程退出时，会触发exit事件，可以对该事件指定回调函数。
 
-{% highlight javascript %}
+``` javascript
 
 process.on('exit', function () {
   fs.writeFileSync('/tmp/myfile', '需要保存到硬盘的信息');
 });
 
-{% endhighlight %}
+```
 
 注意，此时回调函数只能执行同步操作，不能包含异步操作，因为执行完回调函数，进程就会退出，无法监听到回调函数的操作结果。
 
